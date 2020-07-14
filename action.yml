@@ -1,0 +1,22 @@
+# action.yml
+name: 'Help-Wanted RSS'
+author: 'lbonanomi'
+description: 'Generate an RSS of Github Help-Wanted issues'
+inputs:
+  orgs:
+    description: 'Organizations to search'
+    required: false
+    default: 'Github,Mozilla'
+  languages:
+    description: 'Languages to filter repos against'
+    required: false
+    default: 'shell,python,go'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.orgs }}
+    - ${{ inputs.languages }}
+branding:
+  icon: 'box'  
+  color: 'purple'

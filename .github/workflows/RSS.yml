@@ -1,0 +1,23 @@
+name: RSS
+
+on:
+  schedule:
+    - cron: "00 */4 * * *"
+
+jobs:
+  concentrator:
+    runs-on: ubuntu-latest
+    name: Concentrate Help Wanted issues
+    
+    env:
+      TOKEN: ${{ secrets.TOKEN }}  
+      
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Get issues
+        uses: ./ # Uses an action in the root directory
+        id: RSS
+        with:
+          orgs: 'github,octokit,ubuntu'
+          languages: shell,perl,python,go
