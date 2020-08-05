@@ -55,7 +55,7 @@
 
 )
 . This also happens when the app is launched from the command line (Eg. for deleting/listing registrations)
-. If the app is already running in the background we'll get an error because the kext only allows one connection. This error is surfaced to the user, which is confusing. We should not connect to the kext unless we need to." ]]></description></item><item>	<title>Fix Tap reporting tests</title>	<link>https://github.com/github/super-linter/issues/453</link>	<description><![CDATA[We have several `.tap` that are ignored and either need to be:<br/>- Fixed<br/>- Removed<br/><br/>This would greatly help if someone could take a look :)
+. If the app is already running in the background we'll get an error because the kext only allows one connection. This error is surfaced to the user, which is confusing. We should not connect to the kext unless we need to." ]]></description></item><item>	<title>Work on adding Java</title>	<link>https://github.com/github/super-linter/pull/459</link>	<description><![CDATA[<br/># Proposed Changes<br/>Work on adding Java<br/><br/>Fixes #115<br/>" ]]></description></item><item>	<title>Fix Tap reporting tests</title>	<link>https://github.com/github/super-linter/issues/453</link>	<description><![CDATA[We have several `.tap` that are ignored and either need to be:<br/>- Fixed<br/>- Removed<br/><br/>This would greatly help if someone could take a look :)
 <br/>" ]]></description></item><item>	<title>Scala Support</title>	<link>https://github.com/github/super-linter/issues/392</link>	<description><![CDATA[Scala linter support.<br/><br/>Choices are<br/>-  <a href="https://github.com/scalacenter/scalafix">scalafix</a> 
 
 <br/>-  <a href="https://github.com/scalameta/scalafmt">scalafmt</a> 
