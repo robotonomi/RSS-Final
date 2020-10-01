@@ -30,7 +30,7 @@
 .<br/><br/>- Will try and do 2 or more letters per day.<br/><br/>## Key<br/><br/>🙅 = No logo, no brand or lack of info for language<br/>❓ = No suitable colour, but is grouped into a language that has a colour<br/><br/>## Languages<br/><br/><!-- https://github.github.io/linguist/ --><br/><br/>### Numbers<br/><br/>- [ ] 4D `#004289` (source:  <a href="https://4d.com">brand</a> 
 
 )
-<br/><br/>### A<br/><br/>- [ ] ~ABNF~ 🙅<br/>- [ ] ~ASL~ 🙅<br/>- [ ] ~ASN.1~ 🙅 <br/>- [ ] Adobe Font Metrics `#da291c` (source: Adobe / Adobe PostScript)
+<br/><br/>### A<br/><br/>- [ ] ~ABNF~ 🙅<br/>- [ ] ~ASL~ 🙅<br/>- [ ] ~ASN.1~ 🙅 <br/>- [ ] Adobe Font Metrics `#fa0f00` (source: Adobe)
 <br/>- [ ] Alpine Abuild `#0D597F` (grouped in `Shell`, source:  <a href="#0D597F">Alpine logo</a> 
 
 )
@@ -164,7 +164,7 @@
 <br/>- [ ] Git Config `#F44D27` (grouped in `INI`, source:  <a href="https://git-scm.com/">logo</a> 
 
 )
-<br/>- [ ] Glyph Bitmap Distribution Format `#da291c` (source: Adobe / Adobe PostScript)
+<br/>- [ ] Glyph Bitmap Distribution Format `#fa0f00` (source: Adobe)
 <br/>- [ ] Grace `#615f8b` (source:  <a href="http://gracelang.org/applications/">brand</a> 
 
 )
@@ -247,10 +247,36 @@
  <br/>- [ ] Jison Lex `#56B3CB` (grouped in `Lex`, source:  <a href="https://zaa.ch/jison/docs/">logo and branding</a> 
 
 )
- <br/><br/>### K<br/><br/>- [ ] KiCad Layout<br/>- [ ] KiCad Legacy Layout<br/>- [ ] KiCad Schematic<br/>- [ ] Kit<br/><br/>### L<br/><br/>- [ ] LTspice Symbol<br/>- [ ] LabVIEW<br/>- [ ] Lean<br/>- [ ] LilyPond<br/>- [ ] Limbo<br/>- [ ] Linker Script<br/>- [ ] Linux Kernel Module<br/>- [ ] Liquid<br/>- [ ] Literate Agda (grouped in `Agda`)
-<br/>- [ ] Literate CoffeeScript (grouped in `CoffeeScript`)
-<br/>- [ ] Literate Haskell (grouped in `Haskell`)
-<br/>- [ ] Logos<br/>- [ ] Logtalk<br/>- [ ] LoomScript<br/><br/>### M<br/><br/>- [ ] M<br/>- [ ] M4<br/>- [ ] M4Sugar (grouped in `M4`)
+ <br/><br/>### K<br/><br/>- [ ] KiCad Layout `#2f4aaa`, `#1a2a60` or `#f77300` (source:  <a href="https://gitlab.com/kicad">logo</a> 
+
+)
+<br/>- [ ] KiCad Legacy Layout `#2f4aaa`, `#1a2a60` or `#f77300` (source:  <a href="https://gitlab.com/kicad">logo</a> 
+
+)
+<br/>- [ ] KiCad Schematic `#2f4aaa`, `#1a2a60` or `#f77300` (source:  <a href="https://gitlab.com/kicad">logo</a> 
+
+)
+<br/>- [ ] Kit `#2deada`, `#1dba9d` or `#227d6b` (source:  <a href="https://www.kitlang.org/">logo</a> 
+
+)
+<br/><br/>### L<br/><br/>- [ ] ~LTspice Symbol~ 🙅<br/>- [ ] LabVIEW `#fede06` (source:  <a href="https://en.wikipedia.org/wiki/LabVIEW#/media/File:LabVIEW_Logo.jpg">logo</a> 
+
+)
+<br/>- [ ] ~Lean~ 🙅<br/>- [ ] LilyPond `#587E55` (source: average of  <a href="https://lilypond.org/">logo</a> 
+
+)
+<br/>- [ ] ~Limbo~ 🙅<br/>- [ ] ~Linker Script~ 🙅<br/>- [ ] ~Linux Kernel Module~ 🙅<br/>- [ ] Liquid `#3399cc` (source:  <a href="https://shopify.github.io/liquid/">branding</a> 
+
+)
+<br/>- [ ] Literate Agda `#315665`)
+ (grouped in `Agda`, source: same as Agda in Linguist)
+<br/>- [ ] Literate CoffeeScript `#244776` (grouped in `CoffeeScript`, source: same as CoffeeScript in Linguist)
+<br/>- [ ] Literate Haskell `#5e5086` (grouped in `Haskell`, source: same as Haskell in Linguist)
+<br/>- [ ] ~Logos~ 🙅<br/>- [ ] ~Logtalk~ 🙅  <a href="https://github.com/LogtalkDotOrg">solid black logo</a> 
+
+<br/>- [ ] ~LoomScript~ 🙅  <a href="http://loomsdk.com/">solid black logo</a> 
+
+<br/><br/>### M<br/><br/>- [ ] M<br/>- [ ] M4<br/>- [ ] M4Sugar (grouped in `M4`)
 <br/>- [ ] MUF (grouped in `Forth`)
 <br/>- [ ] Mako<br/>- [ ] Mathematica<br/>- [ ] Maven POM<br/>- [ ] MediaWiki<br/>- [ ] Microsoft Developer Studio Project<br/>- [ ] MiniD<br/>- [ ] Modelica<br/>- [ ] Modula-2<br/>- [ ] Module Management System<br/>- [ ] Monkey<br/>- [ ] Moocode<br/>- [ ] MoonScript<br/>- [ ] Motorola 68K Assembly (grouped in `Assembly`)
 <br/>- [ ] Muse<br/>- [ ] Mustache (grouped in `HTML`)
