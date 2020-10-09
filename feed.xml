@@ -352,11 +352,4 @@
 
 <br/><br/>---------------------<br/><br/>Numix:<br/><br/>! <a href="https://user-images.githubusercontent.com/2692138/85305349-90fd1d00-b472-11ea-9db7-e0e1611c0b26.png">Screenshot at 2020-06-22 10-14-35</a> 
 
-<br/>" ]]></description></item><item>	<title>Make Yaru compatible with budgie-panel</title>	<link>https://github.com/ubuntu/yaru/issues/2078</link>	<description><![CDATA[At the current state, using Yaru in budgie panel is almost unreadable. Is it possible to make a budgie-panel theme for Yaru? <br/><br/>! <a href="https://user-images.githubusercontent.com/38846168/76770522-d7a8f000-677c-11ea-934d-6db9132a32c9.png">Screenshot from 2020-03-16 11-53-05</a> 
-
-<br/>" ]]></description></item><item>	<title>[Bionic] Check mark (✓)
- is invisible in Firefox context menu</title>	<link>https://github.com/ubuntu/yaru/issues/2064</link>	<description><![CDATA[### Steps to see the issue<br/>1. Open Firefox and go to a text field<br/>2. Right-click in a text field and select \"Check Spelling\"<br/>3. You should see a check mark (✓)
- beside \"Check Spelling\"<br/>4. The check mark is invisible<br/><br/>### Software that presents the issue<br/>- OS: Ubuntu 18.04<br/>- App: Firefox<br/>- Version: 74<br/><br/>### Yaru version<br/>$ snap info communitheme<br/>snap-id:      Yd6CISPIf6tEf3ZEJ0cqSoEg9rG2VkRi<br/>tracking:     latest/edge<br/>refresh-date: 11 days ago, at 19:12 CET<br/>channels:<br/>  stable:    0.1    2019-03-13 (1768)
- 16MB -<br/>  candidate: ↑                             <br/>  beta:      ↑                             <br/>  edge:      29.180 2020-03-03 (1970)
- 18MB -<br/>installed:   29.180            (1970)
- 18MB -<br/>" ]]></description></item></channel></rss>
+<br/>" ]]></description></item></channel></rss>
