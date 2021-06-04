@@ -28,7 +28,7 @@
 <br/><br/>This exists only in dotcom:<br/><br/>! <a href="https://user-images.githubusercontent.com/55960073/120076634-7548c080-c09e-11eb-927e-22164abdde08.png">image</a> 
 
 <br/><br/>(Tests were performed on GHES 3.0.5 and 3.1.0 with GitHub Connect enabled and with option 'Server can use actions from GitHub.com in workflow runs' enabled)
-:<br/><br/>! <a href="https://user-images.githubusercontent.com/55960073/120076650-93162580-c09e-11eb-9a13-e426fcf14e0d.png">image</a> 
+:<br/><br/>! <a href="https://user-images.githubusercontent.com/1894408/120824864-20eb8800-c559-11eb-8c53-2e89b0089bfb.png">120076650-93162580-c09e-11eb-9a13-e426fcf14e0d</a> 
 
 <br/><br/>### Who does this affect?<br/><br/>GHES admins<br/><br/>### What is the impact to users?<br/><br/>Unnecessary confusion is introduced with GHES admins looking for a feature not available on GitHub Enterprise Server." ]]></description></item><item>	<title>Document how to contain code blocks within code blocks</title>	<link>https://github.com/github/docs/issues/6981</link>	<description><![CDATA[<br/><br/>### What article on docs.github.com is affected?<br/><br/> <a href="https://docs.github.com/en/github/writing-on-github/working-with-advanced-formatting/creating-and-highlighting-code-blocks">Creating and highlighting code blocks</a> 
 
