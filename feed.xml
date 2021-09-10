@@ -57,15 +57,7 @@
 
 <br/>### Project based boards<br/>! <a href="https://camo.githubusercontent.com/2fe68df838b5fb7af01122b8811fea6e37d2136757168806dbac52847801f335/68747470733a2f2f646f63732e6769746875622e636f6d2f6173736574732f696d616765732f68656c702f70726f6a656374732f70726f6a6563742d626f6172642d73657474696e67732e706e67">Screenshot for user based project boards</a> 
 
-" ]]></description></item><item>	<title>Incorrect Use of HTML Code for Apostrophe</title>	<link>https://github.com/github/docs/issues/9485</link>	<description><![CDATA[### Code of Conduct<br/><br/>- [X] I have read and agree to the GitHub Docs project's  <a href="https://github.com/github/docs/blob/main/CODE_OF_CONDUCT.md">Code of Conduct</a> 
-
-<br/><br/>### What article on docs.github.com is affected?<br/><br/>- ** <a href="https://github.com/github/docs/blob/main/content/organizations/managing-peoples-access-to-your-organization-with-roles/index.md">Index File</a> 
-
-**<br/>- ** <a href="https://docs.github.com/en/organizations/managing-peoples-access-to-your-organization-with-roles">Site</a> 
-
-**<br/><br/>! <a href="https://user-images.githubusercontent.com/74975634/131706597-86a2a090-f85b-4799-9f27-8fc509e9efd2.png">image</a> 
-
-<br/><br/><br/>### What changes are you suggesting?<br/><br/>The title should remove the HTML Apostrophe Code<br/><br/>### Additional information<br/><br/>_No response_" ]]></description></item><item>	<title>Link for supported countries for GitHub Sponsors</title>	<link>https://github.com/github/docs/issues/9479</link>	<description><![CDATA[### Code of Conduct<br/><br/>- [X] I have read and agree to the GitHub Docs project's  <a href="https://github.com/github/docs/blob/main/CODE_OF_CONDUCT.md">Code of Conduct</a> 
+" ]]></description></item><item>	<title>Link for supported countries for GitHub Sponsors</title>	<link>https://github.com/github/docs/issues/9479</link>	<description><![CDATA[### Code of Conduct<br/><br/>- [X] I have read and agree to the GitHub Docs project's  <a href="https://github.com/github/docs/blob/main/CODE_OF_CONDUCT.md">Code of Conduct</a> 
 
 <br/><br/>### What article on docs.github.com is affected?<br/><br/>https://docs.github.com/en/sponsors/receiving-sponsorships-through-github-sponsors/setting-up-github-sponsors-for-your-organization<br/><br/>you can find list of all affected texts at https://github.com/github/docs/search?q=https%3A%2F%2Fgithub.com%2Fsponsors%23countries<br/><br/>### What part(s)
  of the article would you like to see updated?<br/><br/>> For a list of supported regions, see  <a href="https://github.com/sponsors#countries">GitHub Sponsors</a> 
