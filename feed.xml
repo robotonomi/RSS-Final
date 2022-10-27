@@ -26,7 +26,9 @@
  of the article would you like to see updated?<br/><br/>The shell command should be:<br/>```<br/>        IDTOKEN=$(curl -H \"Authorization: bearer ${{steps.script.outputs.TOKEN}}\" ${{steps.script.outputs.IDTOKENURL}} -H \"Accept: application/json; api-version=2.0\" -H \"Content-Type: application/json\" -d \"{}\" | jq -r '.value')
 <br/>```<br/><br/>But the stuff inside `{{ }}` seems to be pre-processed out, leaving just `$` signs. See screenshot below.<br/><br/>### Additional information<br/><br/>! <a href="https://user-images.githubusercontent.com/489420/197745881-ac26f1bf-b592-42fb-9292-3ee34ae46ea1.png">Screenshot from 2022-10-25 12-04-13</a> 
 
-<br/>" ]]></description></item><item>	<title>[Improvement]: </title>	<link>https://github.com/github/docs/issues/21591</link>	<description><![CDATA[<br/>### What article(s)
+<br/><br/>---<br/>maintainer edit<br/><br/>### Content plan  <a href="https://github.com/github/docs/issues/21606#issuecomment-1292716025">here</a> 
+
+" ]]></description></item><item>	<title>[Improvement]: </title>	<link>https://github.com/github/docs/issues/21591</link>	<description><![CDATA[<br/>### What article(s)
  is affected?<br/><br/>These reusables:<br/><br/>- data/reusables/secret-scanning/partner-secret-list-private-repo.md<br/>- data/reusables/secret-scanning/partner-secret-list-public-repo.md<br/>- data/reusables/secret-scanning/secret-list-private-push-protection.md<br/><br/>### Describe the desired docs changes and the problem they solve for customers.<br/><br/>We should update the capitalization in the reusables listed above to be consistent with the style guide. Product names (e.g. `Atlassian`)
  and abbreviations (e.g. `API`)
  should remain capitalized, but other things (e.g. `Refresh Token`)
