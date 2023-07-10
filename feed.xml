@@ -19,19 +19,7 @@
 
 .<br/><br/>Very low priority, may even be a bad idea, just recording it for now.<br/>" ]]></description></item><item>	<title>Add Free Art License</title>	<link>https://github.com/github/choosealicense.com/issues/314</link>	<description><![CDATA[ <a href="http://artlibre.org/licence/lal/en/">Free Art License 1.3</a> 
 
-<br/>" ]]></description></item><item>	<title>Quickstart for GitHub Packages has broken formatting</title>	<link>https://github.com/github/docs/issues/26529</link>	<description><![CDATA[### Code of Conduct<br/><br/>- [X] I have read and agree to the GitHub Docs project's  <a href="https://github.com/github/docs/blob/main/CODE_OF_CONDUCT.md">Code of Conduct</a> 
-
-<br/><br/>### What article on docs.github.com is affected?<br/><br/>The  <a href="https://docs.github.com/en/packages/quickstart">_Quickstart for GitHub Packages_</a> 
-
- article seems to have broken formatting and the ordinal indicators of the steps are out of order.<br/><br/>To make a wild guess, this issue seems to be caused by one of the recent commits that modified this file. Here are 2 commits that caught my attention:<br/><br/>- 1dfa5c251e99d2a91cc15cb8685db1007f7f5502<br/>- a8a6e4554a5ac974417dd45dadb9972902a6f35c<br/><br/># Screenshots<br/><br/>The following content seem like rendered Markdown but it's actually just screenshots 😄<br/><br/>```<br/><screenshots><br/>```<br/><br/>! <a href="https://github.com/github/docs/assets/5116133/e920eb17-1961-45b9-8529-b9fdf531ccff">image</a> 
-
-<br/>! <a href="https://github.com/github/docs/assets/5116133/aa81b8f9-0857-49ee-b810-b330681ec474">image</a> 
-
-<br/>! <a href="https://github.com/github/docs/assets/5116133/4a97c050-cd50-43ba-9298-e4a33612aac8">image</a> 
-
-<br/>! <a href="https://github.com/github/docs/assets/5116133/a587c9ee-cad1-439c-b8b9-c85af31e45ef">image</a> 
-
-<br/><br/>```<br/></screenshots><br/>```<br/><br/>### What changes are you suggesting?<br/><br/>I suggest to fix the formatting of the _Quickstart for GitHub Packages_ docs.<br/><br/>### Additional information<br/><br/>_No response_" ]]></description></item><item>	<title>Change wording in enterprise team synchronization documentation from \"organization\" to \"enterprise\".</title>	<link>https://github.com/github/docs/issues/26290</link>	<description><![CDATA[### Code of Conduct<br/><br/>- [X] I have read and agree to the GitHub Docs project's  <a href="https://github.com/github/docs/blob/main/CODE_OF_CONDUCT.md">Code of Conduct</a> 
+<br/>" ]]></description></item><item>	<title>Change wording in enterprise team synchronization documentation from \"organization\" to \"enterprise\".</title>	<link>https://github.com/github/docs/issues/26290</link>	<description><![CDATA[### Code of Conduct<br/><br/>- [X] I have read and agree to the GitHub Docs project's  <a href="https://github.com/github/docs/blob/main/CODE_OF_CONDUCT.md">Code of Conduct</a> 
 
 <br/><br/>### What article on docs.github.com is affected?<br/><br/>https://docs.github.com/en/enterprise-cloud@latest/admin/identity-and-access-management/using-saml-for-enterprise-iam/managing-team-synchronization-for-organizations-in-your-enterprise<br/><br/>### What part(s)
  of the article would you like to see updated?<br/><br/>Step 5 says:<br/><br/>> Confirm that SAML SSO is enabled for your organization. For more information, see \" <a href="https://docs.github.com/en/enterprise-cloud@latest/organizations/managing-saml-single-sign-on-for-your-organization">Managing SAML single sign-on for your organization</a> 
