@@ -17,7 +17,42 @@
 
 <br/><br/>Obviously this is not a big help for MIT, but for longer licenses, it can be tricky to figure out what bits of the license are pertinent for a particular rule, at least if you only want to read once, which is more already than I suspect most people do.<br/><br/>Such annotations _might_ be very helpful to \"demystify\" licenses, and creating them might be good QA for choosealicense.com license descriptions.<br/><br/>Probably the simplest way to to annotate would be to have one or more full text extracts for each license for each rule, though there are other ways to do it, inline or  <a href="https://github.com/hypothesis/h/wiki/robust-anchors">out of band</a> 
 
-.<br/><br/>Very low priority, may even be a bad idea, just recording it for now.<br/>" ]]></description></item><item>	<title>Assignee description on \"assignee\" events referes to unassigned</title>	<link>https://github.com/github/docs/issues/28315</link>	<description><![CDATA[### Code of Conduct<br/><br/>- [X] I have read and agree to the GitHub Docs project's  <a href="https://github.com/github/docs/blob/main/CODE_OF_CONDUCT.md">Code of Conduct</a> 
+.<br/><br/>Very low priority, may even be a bad idea, just recording it for now.<br/>" ]]></description></item><item>	<title>Heading levels should go down one level at a time</title>	<link>https://github.com/github/docs/issues/28368</link>	<description><![CDATA[### Code of Conduct<br/><br/>- [x] I have read and agree to the GitHub Docs project's  <a href="https://github.com/github/docs/blob/main/CODE_OF_CONDUCT.md">Code of Conduct</a> 
+
+<br/><br/>### What article on docs.github.com is affected?<br/><br/>Heading levels should only go down one level at a time. <br/><br/>```<br/>## First header <br/><br/>text<br/><br/>### Second header<br/>```<br/>The following articles have one or more headers which skip a heading level. In most cases they go from an h2 to an h4. <br/><br/>[Expressions (Actions)
+](https://docs.github.com/en/actions/learn-github-actions/expressions)
+<br/> <a href="https://docs.github.com/en/actions/migrating-to-github-actions/manually-migrating-to-github-actions/migrating-from-travis-ci-to-github-actions">Migrating from Travis CI to GitHub Actions</a> 
+
+<br/> <a href="https://docs.github.com/en/get-started/onboarding/getting-started-with-github-enterprise-cloud">Getting started with GitHub Enterprise Cloud</a> 
+
+<br/> <a href="https://docs.github.com/en/migrations/using-github-enterprise-importer/migrating-repositories-with-github-enterprise-importer/migrating-repositories-from-azure-devops-to-github-enterprise-cloud">Migrating repositories from Azure DevOps to GitHub Enterprise Cloud</a> 
+
+<br/> <a href="https://docs.github.com/en/migrations/using-github-enterprise-importer/migrating-repositories-with-github-enterprise-importer/migrating-repositories-from-githubcom-to-github-enterprise-cloud">Migrating repositories from GitHub.com to GitHub Enterprise Cloud</a> 
+
+<br/> <a href="https://docs.github.com/en/migrations/using-github-enterprise-importer/migrating-repositories-with-github-enterprise-importer/migrating-repositories-from-github-enterprise-server-to-github-enterprise-cloud">Migrating repositories from GitHub Enterprise Server to GitHub Enterprise Cloud</a> 
+
+<br/> <a href="https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/configuring-pull-request-merges/managing-a-merge-queue">Managing a merge queue</a> 
+
+<br/> <a href="https://docs.github.com/en/site-policy/site-policy-deprecated/github-ae-data-protection-agreement">GitHub AE Data Protection Agreement</a> 
+
+<br/><br/>In Markdown you indicate headers using # marks. <br/><br/>```<br/>h2 = ## text<br/>h3 = ### text<br/>h4 = #### text<br/><br/>```<br/><br/>### What part(s)
+ of the article would you like to see updated?<br/><br/>[Expressions (Actions)
+](https://docs.github.com/en/actions/learn-github-actions/expressions)
+<br/><br/>Line 121 - change h4 to h3<br/><br/> <a href="https://docs.github.com/en/actions/migrating-to-github-actions/manually-migrating-to-github-actions/migrating-from-travis-ci-to-github-actions">Migrating from Travis CI to GitHub Actions</a> 
+
+<br/><br/>Line 322 - change h4 to h3<br/><br/> <a href="https://docs.github.com/en/get-started/onboarding/getting-started-with-github-enterprise-cloud">Getting started with GitHub Enterprise Cloud</a> 
+
+<br/><br/>Lines 26, 30, 36, 40, 50, 54, 60, 115,119 - change h4 to h3<br/><br/> <a href="https://docs.github.com/en/migrations/using-github-enterprise-importer/migrating-repositories-with-github-enterprise-importer/migrating-repositories-from-azure-devops-to-github-enterprise-cloud">Migrating repositories from Azure DevOps to GitHub Enterprise Cloud</a> 
+
+<br/><br/>Lines 49, 91 - change h4 to h3<br/><br/> <a href="https://docs.github.com/en/migrations/using-github-enterprise-importer/migrating-repositories-with-github-enterprise-importer/migrating-repositories-from-githubcom-to-github-enterprise-cloud">Migrating repositories from GitHub.com to GitHub Enterprise Cloud</a> 
+
+<br/><br/>Lines 49, 68, 91 - change h4 to h3<br/><br/> <a href="https://docs.github.com/en/migrations/using-github-enterprise-importer/migrating-repositories-with-github-enterprise-importer/migrating-repositories-from-github-enterprise-server-to-github-enterprise-cloud">Migrating repositories from GitHub Enterprise Server to GitHub Enterprise Cloud</a> 
+
+<br/><br/>Lines 103, 123, 247 - change h4 to h3<br/><br/> <a href="https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/configuring-pull-request-merges/managing-a-merge-queue">Managing a merge queue</a> 
+
+<br/><br/>Lines 93, 103, 119 - change h4 to h3<br/><br/> <a href="https://docs.github.com/en/site-policy/site-policy-deprecated/github-ae-data-protection-agreement">GitHub AE Data Protection Agreement</a> 
+
+<br/><br/>Lines 50, 54, 60, 68, 216, 230, 234, 244, 268, 298, 308, 318, 326, 330, 334, 344 - change h4 to h3<br/><br/>Lines 350, 381 - change h3 to h2<br/><br/>### Additional information<br/><br/>_No response_" ]]></description></item><item>	<title>Assignee description on \"assignee\" events referes to unassigned</title>	<link>https://github.com/github/docs/issues/28315</link>	<description><![CDATA[### Code of Conduct<br/><br/>- [X] I have read and agree to the GitHub Docs project's  <a href="https://github.com/github/docs/blob/main/CODE_OF_CONDUCT.md">Code of Conduct</a> 
 
 <br/><br/>### What article on docs.github.com is affected?<br/><br/>From  <a href="https://docs.github.com/en/rest/overview/issue-event-types?apiVersion=2022-11-28#assigned">Assignee Issue timeline event</a> 
 
