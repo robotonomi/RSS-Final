@@ -17,7 +17,21 @@
 
 <br/><br/>Obviously this is not a big help for MIT, but for longer licenses, it can be tricky to figure out what bits of the license are pertinent for a particular rule, at least if you only want to read once, which is more already than I suspect most people do.<br/><br/>Such annotations _might_ be very helpful to \"demystify\" licenses, and creating them might be good QA for choosealicense.com license descriptions.<br/><br/>Probably the simplest way to to annotate would be to have one or more full text extracts for each license for each rule, though there are other ways to do it, inline or  <a href="https://github.com/hypothesis/h/wiki/robust-anchors">out of band</a> 
 
-.<br/><br/>Very low priority, may even be a bad idea, just recording it for now.<br/>" ]]></description></item><item>	<title>Update notifications reusable from bell to inbox</title>	<link>https://github.com/github/docs/issues/28578</link>	<description><![CDATA[### Code of Conduct<br/><br/>- [x] I have read and agree to the GitHub Docs project's  <a href="https://github.com/github/docs/blob/main/CODE_OF_CONDUCT.md">Code of Conduct</a> 
+.<br/><br/>Very low priority, may even be a bad idea, just recording it for now.<br/>" ]]></description></item><item>	<title>Some variables in \"Migrating from GitLab CI/CD to GitHub Actions\" aren't resolved</title>	<link>https://github.com/github/docs/issues/28602</link>	<description><![CDATA[### Code of Conduct<br/><br/>- [X] I have read and agree to the GitHub Docs project's  <a href="https://github.com/github/docs/blob/main/CODE_OF_CONDUCT.md">Code of Conduct</a> 
+
+<br/><br/>### What article on docs.github.com is affected?<br/><br/> <a href="https://docs.github.com/en/actions/migrating-to-github-actions/manually-migrating-to-github-actions/migrating-from-gitlab-cicd-to-github-actions">Migrating from GitLab CI/CD to GitHub Actions</a> 
+
+<br/><br/>generated from  <a href="content/actions/migrating-to-github-actions/manually-migrating-to-github-actions/migrating-from-gitlab-cicd-to-github-actions.md">content/actions/migrating-to-github-actions/manually-migrating-to-github-actions/migrating-from-gitlab-cicd-to-github-actions.md</a> 
+
+<br/><br/>### What changes are you suggesting?<br/><br/>Some, but not all template inclusions show up as bare source code in the rendered output:<br/><br/>! <a href="https://github.com/github/docs/assets/32523967/98a2442b-c3ee-4a41-9c49-9f88d3e8181e">image</a> 
+
+<br/>! <a href="https://github.com/github/docs/assets/32523967/bf04610b-4b09-4809-905e-10f6bac159e8">image</a> 
+
+<br/>! <a href="https://github.com/github/docs/assets/32523967/bca69825-d083-4453-9092-e9c3961d9d9d">image</a> 
+
+<br/><br/>A cursory check suggests that the referenced templates do exist. <br/><br/>It doesnt't seem to be a general problem. For example, `{% data reusables.actions.action-cache %}` is correctly substituted:<br/>! <a href="https://github.com/github/docs/assets/32523967/4d796ba0-513e-4624-91d9-8ac16f217f9e">image</a> 
+
+<br/><br/><br/>### Additional information<br/><br/>_No response_" ]]></description></item><item>	<title>Update notifications reusable from bell to inbox</title>	<link>https://github.com/github/docs/issues/28578</link>	<description><![CDATA[### Code of Conduct<br/><br/>- [x] I have read and agree to the GitHub Docs project's  <a href="https://github.com/github/docs/blob/main/CODE_OF_CONDUCT.md">Code of Conduct</a> 
 
 <br/><br/>### What article on docs.github.com is affected?<br/><br/>- \" <a href="https://docs.github.com/en/account-and-profile/managing-subscriptions-and-notifications-on-github/managing-subscriptions-for-activity-on-github/viewing-your-subscriptions">Viewing your subscriptions</a> 
 
