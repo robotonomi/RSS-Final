@@ -21,7 +21,7 @@
 
 <br/><br/>### What article on docs.github.com is affected?<br/><br/> <a href="https://docs.github.com/en/actions/migrating-to-github-actions/manually-migrating-to-github-actions/migrating-from-gitlab-cicd-to-github-actions">Migrating from GitLab CI/CD to GitHub Actions</a> 
 
-<br/><br/>generated from  <a href="content/actions/migrating-to-github-actions/manually-migrating-to-github-actions/migrating-from-gitlab-cicd-to-github-actions.md">content/actions/migrating-to-github-actions/manually-migrating-to-github-actions/migrating-from-gitlab-cicd-to-github-actions.md</a> 
+<br/><br/>generated from  <a href="https://github.com/github/docs/blob/c793d974c47b176cfee18cf4e0a1a7e31f798a5c/content/actions/migrating-to-github-actions/manually-migrating-to-github-actions/migrating-from-gitlab-cicd-to-github-actions.md">content/actions/migrating-to-github-actions/manually-migrating-to-github-actions/migrating-from-gitlab-cicd-to-github-actions.md</a> 
 
 <br/><br/>### What changes are you suggesting?<br/><br/>Some, but not all template inclusions show up as bare source code in the rendered output:<br/><br/>! <a href="https://github.com/github/docs/assets/32523967/98a2442b-c3ee-4a41-9c49-9f88d3e8181e">image</a> 
 
