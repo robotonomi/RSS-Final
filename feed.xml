@@ -56,23 +56,6 @@
 
 <br/>- [ ]  <a href="https://docs.github.com/en/code-security/codeql-cli/getting-started-with-the-codeql-cli/uploading-codeql-analysis-results-to-github">Uploading CodeQL analysis results to GitHub</a> 
 
-<br/><br/>### Additional information<br/><br/>_No response_" ]]></description></item><item>	<title>Update \"getting started\" articles for code security to use monospace font for file/directory names consistently</title>	<link>https://github.com/github/docs/issues/28393</link>	<description><![CDATA[### Code of Conduct<br/><br/>- [x] I have read and agree to the GitHub Docs project's  <a href="https://github.com/github/docs/blob/main/CODE_OF_CONDUCT.md">Code of Conduct</a> 
-
-<br/><br/>### What article on docs.github.com is affected?<br/><br/>Historically, our style guide recommended using italic font to format file names and directory names in our documentation. Our current guidelines recommend using monospace font and it would be good to update more articles to follow the current guidelines. For more information, see: \" <a href="https://docs.github.com/en/contributing/writing-for-github-docs/style-guide#file-names-and-directory-names">File names and directory names</a> 
-
-\"<br/><br/>### What part(s)
- of the article would you like to see updated?<br/><br/>Files to review and check for file names and directory names that should be reformatted:<br/><br/>- [ ]  <a href="https://docs.github.com/en/code-security/getting-started/github-security-features">GitHub security features</a> 
-
-<br/>- [ ]  <a href="https://docs.github.com/en/code-security/getting-started/securing-your-repository">Securing your repository</a> 
-
-<br/>- [ ]  <a href="https://docs.github.com/en/code-security/getting-started/securing-your-organization">Securing your organization</a> 
-
-<br/>- [ ]  <a href="https://docs.github.com/en/code-security/getting-started/adding-a-security-policy-to-your-repository">Adding a security policy to your repository</a> 
-
-<br/>- [ ]  <a href="https://docs.github.com/en/code-security/getting-started/auditing-security-alerts">Auditing security alerts</a> 
-
-<br/>- [ ]  <a href="https://docs.github.com/en/code-security/getting-started/best-practices-for-preventing-data-leaks-in-your-organization">Best practices for preventing data leaks in your organization</a> 
-
 <br/><br/>### Additional information<br/><br/>_No response_" ]]></description></item><item>	<title>References to `<username>@users.noreply.github.com` should be reworked, as they are misleading</title>	<link>https://github.com/github/docs/issues/27985</link>	<description><![CDATA[👉 To the contributor who picks up this issue: See the **content plan to follow** below, under the header \"Maintainer note.\"<br/><br/>### Code of Conduct<br/><br/>- [X] I have read and agree to the GitHub Docs project's  <a href="https://github.com/github/docs/blob/main/CODE_OF_CONDUCT.md">Code of Conduct</a> 
 
 <br/><br/>### What article on docs.github.com is affected?<br/><br/>https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/adding-content-to-your-github-pages-site-using-jekyll<br/><br/>### What part(s)
