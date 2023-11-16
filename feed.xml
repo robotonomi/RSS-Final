@@ -33,7 +33,7 @@
 <br/>{<br/>\tdeclare input=${1:-$(</dev/stdin)
 }<br/>\tprintf '%s' \"${input}\" | openssl dgst -binary -sha256 -sign $pem<br/>}<br/><br/>header_base64=$(echo \"${header}\" | json | base64_encode)
 <br/>signature=$(echo \"${header_base64}\" | hmacsha256_sign | base64_encode)
-<br/><br/>echo \"${header_base64}.${signature}\"<br/>```<br/><br/>### Additional information<br/><br/>_No response_" ]]></description></item><item>	<title>`Further reading` item in `About READMEs` links to an archived repository</title>	<link>https://github.com/github/docs/issues/29828</link>	<description><![CDATA[### Code of Conduct<br/><br/>- [X] I have read and agree to the GitHub Docs project's  <a href="https://github.com/github/docs/blob/main/CODE_OF_CONDUCT.md">Code of Conduct</a> 
+<br/><br/>echo \"${header_base64}.${signature}\"<br/>```<br/><br/>### Additional information<br/><br/>_No response_<br/><br/>### Content plan<br/>Once a working shell script has been provided, update to include the new example" ]]></description></item><item>	<title>`Further reading` item in `About READMEs` links to an archived repository</title>	<link>https://github.com/github/docs/issues/29828</link>	<description><![CDATA[### Code of Conduct<br/><br/>- [X] I have read and agree to the GitHub Docs project's  <a href="https://github.com/github/docs/blob/main/CODE_OF_CONDUCT.md">Code of Conduct</a> 
 
 <br/><br/>### What article on docs.github.com is affected?<br/><br/> <a href="https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes">About READMEs</a> 
 
