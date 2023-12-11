@@ -17,36 +17,7 @@
 
 <br/><br/>Obviously this is not a big help for MIT, but for longer licenses, it can be tricky to figure out what bits of the license are pertinent for a particular rule, at least if you only want to read once, which is more already than I suspect most people do.<br/><br/>Such annotations _might_ be very helpful to \"demystify\" licenses, and creating them might be good QA for choosealicense.com license descriptions.<br/><br/>Probably the simplest way to to annotate would be to have one or more full text extracts for each license for each rule, though there are other ways to do it, inline or  <a href="https://github.com/hypothesis/h/wiki/robust-anchors">out of band</a> 
 
-.<br/><br/>Very low priority, may even be a bad idea, just recording it for now.<br/>" ]]></description></item><item>	<title>Update docs for Generating a JWT for GitHub App </title>	<link>https://github.com/github/docs/issues/30360</link>	<description><![CDATA[### Code of Conduct<br/><br/>- [X] I have read and agree to the GitHub Docs project's  <a href="https://github.com/github/docs/blob/main/CODE_OF_CONDUCT.md">Code of Conduct</a> 
-
-<br/><br/>### What article on docs.github.com is affected?<br/><br/>https://docs.github.com/en/apps/creating-github-apps/authenticating-with-a-github-app/generating-a-json-web-token-jwt-for-a-github-app#example-using-python-to-generate-a-jwt<br/><br/>### What part(s)
- of the article would you like to see updated?<br/><br/> <a href="https://docs.github.com/en/apps/creating-github-apps/authenticating-with-a-github-app/generating-a-json-web-token-jwt-for-a-github-app#example-using-python-to-generate-a-jwt">Example: Using Python to generate a JWT</a> 
-
-<br/><br/>The `Note:` may be updated to mention _both_ `PyJWT` and `jwt`. Both Python modules use the same namespace, and if the Python environment where this is being run has PyJWT installed, the script does not work.<br/><br/>To fix this, we introduce two functions from the `cryptography` module, and before the script runs the loaded `jwt` module has its attributes evaluated to determine whether it's `PyJWT` or `jwt`. The condition may be improved upon, but I've tested the following that works: <br/>> isPyJwt = hasattr(jwt,\"__name__\")
- and hasattr(jwt,\"PyJWT\")
-<br/><br/>The remaining changes can be identified by looking for the conditions that reference `isPyJwt`.<br/><br/>Updated script:<br/><br/>```<br/>#!/usr/bin/env python3<br/>import jwt<br/>import time<br/>import sys<br/>from cryptography.hazmat.primitives.serialization import load_pem_private_key<br/>from cryptography.hazmat.backends import default_backend<br/><br/># Determine what module JWT is coming from (PyJWT and jwt share the same namespace)
-<br/>isPyJwt = hasattr(jwt,\"__name__\")
- and hasattr(jwt,\"PyJWT\")
-<br/><br/># Get PEM file path<br/>if len(sys.argv)
- > 1:<br/>    pem = sys.argv[1]<br/>else:<br/>    pem = input(\"Enter path of private PEM file: \")
-<br/><br/># Get the App ID<br/>if len(sys.argv)
- > 2:<br/>    app_id = sys.argv[2]<br/>else:<br/>    app_id = input(\"Enter your APP ID: \")
-<br/><br/># Open PEM<br/>with open(pem, 'rb')
- as pem_file:<br/>    if isPyJwt:<br/>        signing_key = load_pem_private_key(pem_file.read()
-, None, default_backend()
-)
-<br/>    else:<br/>        signing_key = jwt.jwk_from_pem(pem_file.read()
-)
-<br/><br/>payload = {<br/>    # Issued at time<br/>    'iat': int(time.time()
-)
-,<br/>    # JWT expiration time (10 minutes maximum)
-<br/>    'exp': int(time.time()
-)
- + 600,<br/>    # GitHub App's identifier<br/>    'iss': app_id<br/>}<br/><br/># Create JWT<br/>if isPyJwt:<br/>    encoded_jwt = jwt.encode(payload, signing_key, algorithm='RS256')
-<br/>else:<br/>    jwt_instance = jwt.JWT()
-<br/>    encoded_jwt = jwt_instance.encode(payload, signing_key, alg='RS256')
-<br/><br/>print(f\"{encoded_jwt}\")
-<br/>```<br/><br/>### Additional information<br/><br/>This has been tested in two scenarios - one in which the system only has _only_ `PyJWT`, and the other that has the `jwt` module installed. " ]]></description></item><item>	<title>Wrong link for list of GH hosted runners</title>	<link>https://github.com/github/docs/issues/30323</link>	<description><![CDATA[### Code of Conduct<br/><br/>- [X] I have read and agree to the GitHub Docs project's  <a href="https://github.com/github/docs/blob/main/CODE_OF_CONDUCT.md">Code of Conduct</a> 
+.<br/><br/>Very low priority, may even be a bad idea, just recording it for now.<br/>" ]]></description></item><item>	<title>Wrong link for list of GH hosted runners</title>	<link>https://github.com/github/docs/issues/30323</link>	<description><![CDATA[### Code of Conduct<br/><br/>- [X] I have read and agree to the GitHub Docs project's  <a href="https://github.com/github/docs/blob/main/CODE_OF_CONDUCT.md">Code of Conduct</a> 
 
 <br/><br/>### What article on docs.github.com is affected?<br/><br/>https://docs.github.com/en/actions/using-github-hosted-runners/about-github-hosted-runners/about-github-hosted-runners#using-a-github-hosted-runner<br/><br/>### What changes are you suggesting?<br/><br/>The above-mentioned paragraph says:<br/><br/>For the full list of runner types, see \" <a href="https://docs.github.com/en/actions/using-github-hosted-runners/about-github-hosted-runners#supported-runners-and-hardware-resources">Using GitHub-hosted runners</a> 
 
