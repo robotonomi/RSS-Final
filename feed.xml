@@ -19,7 +19,30 @@ _, we see the dreaded `Resource not accessible by integration` error. Example fr
 : $/${} is unnecessary on arithmetic variables.<br/><br/><br/>In generate-jwt.sh line 11:<br/>exp=$((${now} + 600)
 )
  # Expires 10 minutes in the future<br/>       ^----^ SC2004 (style)
-: $/${} is unnecessary on arithmetic variables.<br/><br/>For more information:<br/>  https://www.shellcheck.net/wiki/SC2086 -- Double quote to prevent globbing ...<br/>  https://www.shellcheck.net/wiki/SC2004 -- $/${} is unnecessary on arithmeti...<br/>```" ]]></description></item><item>	<title>More sophisticated example for `hashFiles` function</title>	<link>https://github.com/github/docs/issues/32305</link>	<description><![CDATA[### Code of Conduct<br/><br/>- [X] I have read and agree to the GitHub Docs project's  <a href="https://github.com/github/docs/blob/main/.github/CODE_OF_CONDUCT.md">Code of Conduct</a> 
+: $/${} is unnecessary on arithmetic variables.<br/><br/>For more information:<br/>  https://www.shellcheck.net/wiki/SC2086 -- Double quote to prevent globbing ...<br/>  https://www.shellcheck.net/wiki/SC2004 -- $/${} is unnecessary on arithmeti...<br/>```" ]]></description></item><item>	<title>docs(github actions)
+: steps context not listed in job environment url</title>	<link>https://github.com/github/docs/issues/32603</link>	<description><![CDATA[### Code of Conduct<br/><br/>- [X] I have read and agree to the GitHub Docs project's  <a href="https://github.com/github/docs/blob/main/.github/CODE_OF_CONDUCT.md">Code of Conduct</a> 
+
+<br/><br/>### What article on docs.github.com is affected?<br/><br/>Under  <a href="https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idenvironment">jobs.<job_id>.environment</a> 
+
+, it says:<br/><br/>> The value of url can be an expression. Allowed expression contexts:  <a href="https://docs.github.com/en/actions/learn-github-actions/contexts#github-context">github</a> 
+
+,  <a href="https://docs.github.com/en/actions/learn-github-actions/contexts#inputs-context">inputs</a> 
+
+,  <a href="https://docs.github.com/en/actions/learn-github-actions/contexts#vars-context">vars</a> 
+
+,  <a href="https://docs.github.com/en/actions/learn-github-actions/contexts#needs-context">needs</a> 
+
+,  <a href="https://docs.github.com/en/actions/learn-github-actions/contexts#strategy-context">strategy</a> 
+
+,  <a href="https://docs.github.com/en/actions/learn-github-actions/contexts#matrix-context">matrix</a> 
+
+,  <a href="https://docs.github.com/en/actions/learn-github-actions/contexts#job-context">job</a> 
+
+,  <a href="https://docs.github.com/en/actions/learn-github-actions/contexts#runner-context">runner</a> 
+
+, and  <a href="https://docs.github.com/en/actions/learn-github-actions/contexts#env-context">env</a> 
+
+.<br/><br/>The steps context is not listed despite being used in the example below:<br/><br/>```yaml<br/>environment:<br/>  name: production_environment<br/>  url: ${{ steps.step_id.outputs.url_output }}<br/>```<br/><br/>### What changes are you suggesting?<br/><br/>Add **steps** to the list of allowed expression contexts.<br/><br/>### Additional information<br/><br/>_No response_" ]]></description></item><item>	<title>More sophisticated example for `hashFiles` function</title>	<link>https://github.com/github/docs/issues/32305</link>	<description><![CDATA[### Code of Conduct<br/><br/>- [X] I have read and agree to the GitHub Docs project's  <a href="https://github.com/github/docs/blob/main/.github/CODE_OF_CONDUCT.md">Code of Conduct</a> 
 
 <br/><br/>### What article on docs.github.com is affected?<br/><br/>https://docs.github.com/en/actions/learn-github-actions/expressions#hashfiles<br/><br/>### What part(s)
  of the article would you like to see updated?<br/><br/>I think it'd be beneficial if the  <a href="https://docs.github.com/en/actions/learn-github-actions/expressions#hashfiles">`hashFiles`</a> 
