@@ -19,7 +19,30 @@ _, we see the dreaded `Resource not accessible by integration` error. Example fr
 : $/${} is unnecessary on arithmetic variables.<br/><br/><br/>In generate-jwt.sh line 11:<br/>exp=$((${now} + 600)
 )
  # Expires 10 minutes in the future<br/>       ^----^ SC2004 (style)
-: $/${} is unnecessary on arithmetic variables.<br/><br/>For more information:<br/>  https://www.shellcheck.net/wiki/SC2086 -- Double quote to prevent globbing ...<br/>  https://www.shellcheck.net/wiki/SC2004 -- $/${} is unnecessary on arithmeti...<br/>```" ]]></description></item><item>	<title>\"Ensure entries are GitHub Orgs\" takes a long time to run, surfaces problems unrelated to changes in a given PR</title>	<link>https://github.com/github/government.github.com/issues/1265</link>	<description><![CDATA[- [ ] run \"Ensure entries are GitHub Orgs\" on all entries periodically (weekly?)
+: $/${} is unnecessary on arithmetic variables.<br/><br/>For more information:<br/>  https://www.shellcheck.net/wiki/SC2086 -- Double quote to prevent globbing ...<br/>  https://www.shellcheck.net/wiki/SC2004 -- $/${} is unnecessary on arithmeti...<br/>```" ]]></description></item><item>	<title>docs(github actions)
+: steps context not listed in job environment url</title>	<link>https://github.com/github/docs/issues/32603</link>	<description><![CDATA[### Code of Conduct<br/><br/>- [X] I have read and agree to the GitHub Docs project's  <a href="https://github.com/github/docs/blob/main/.github/CODE_OF_CONDUCT.md">Code of Conduct</a> 
+
+<br/><br/>### What article on docs.github.com is affected?<br/><br/>Under  <a href="https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idenvironment">jobs.<job_id>.environment</a> 
+
+, it says:<br/><br/>> The value of url can be an expression. Allowed expression contexts:  <a href="https://docs.github.com/en/actions/learn-github-actions/contexts#github-context">github</a> 
+
+,  <a href="https://docs.github.com/en/actions/learn-github-actions/contexts#inputs-context">inputs</a> 
+
+,  <a href="https://docs.github.com/en/actions/learn-github-actions/contexts#vars-context">vars</a> 
+
+,  <a href="https://docs.github.com/en/actions/learn-github-actions/contexts#needs-context">needs</a> 
+
+,  <a href="https://docs.github.com/en/actions/learn-github-actions/contexts#strategy-context">strategy</a> 
+
+,  <a href="https://docs.github.com/en/actions/learn-github-actions/contexts#matrix-context">matrix</a> 
+
+,  <a href="https://docs.github.com/en/actions/learn-github-actions/contexts#job-context">job</a> 
+
+,  <a href="https://docs.github.com/en/actions/learn-github-actions/contexts#runner-context">runner</a> 
+
+, and  <a href="https://docs.github.com/en/actions/learn-github-actions/contexts#env-context">env</a> 
+
+.<br/><br/>The steps context is not listed despite being used in the example below:<br/><br/>```yaml<br/>environment:<br/>  name: production_environment<br/>  url: ${{ steps.step_id.outputs.url_output }}<br/>```<br/><br/>### What changes are you suggesting?<br/><br/>Add **steps** to the list of allowed expression contexts.<br/><br/>### Additional information<br/><br/>_No response_" ]]></description></item><item>	<title>\"Ensure entries are GitHub Orgs\" takes a long time to run, surfaces problems unrelated to changes in a given PR</title>	<link>https://github.com/github/government.github.com/issues/1265</link>	<description><![CDATA[- [ ] run \"Ensure entries are GitHub Orgs\" on all entries periodically (weekly?)
 , generate issue or pr if failures occur<br/>- [ ] only check changed/added entries in given PR" ]]></description></item><item>	<title>Add additional UK Home Office organisations</title>	<link>https://github.com/github/government.github.com/issues/932</link>	<description><![CDATA[Add additional UK Home Office organisations: <br/>```<br/>    [\"UKHomeOffice\"],<br/>    [\"HO-CTO\"],<br/>    [\"UKHomeOffice-test\"],<br/>    [\"HMPO\"],<br/>    [\"Enterprise-functional-tests\"],<br/>    [\"UKHomeOffice-attic\"],<br/>    [\"technical-docs\"],<br/>    [\"HomeOffice-Automation-SSO\"],<br/>    [\"UKHomeOfficeForms\"]<br/>```" ]]></description></item><item>	<title>Dockerfile support</title>	<link>https://github.com/github/licensed/issues/272</link>	<description><![CDATA[Would be great if `licensed` supported analyzing `Dockerfile`s and what is installed there to track all dependencies of a project!" ]]></description></item><item>	<title>Question about tags</title>	<link>https://github.com/github/octocatalog-diff/issues/209</link>	<description><![CDATA[Is there any way to have octocatalog-diff do the opposite of --ignore-tags?  I'd like to be able to specify one or more tags and have octocatalog-diff only compare resources containing those tags?  This would help predict the behavior of running puppet with those tags." ]]></description></item><item>	<title>Turn parallel_tests back on for CI</title>	<link>https://github.com/github/octocatalog-diff/issues/164</link>	<description><![CDATA[Recently the CI for octocatalog-diff has been pretty flaky due to random tests getting killed. From travis CI documents, I concluded that the individual tests may be exhausting resources of the container, and as such in https://github.com/github/octocatalog-diff/pull/161 I disabled the parallel_tests gem for CI. Since then, no problems. :crossed_fingers: But, unfortunately the CI build time per ruby version increased by about 5 minutes (20 to 25)
  as a result of this change.<br/><br/>I'm entering this issue to keep track turning this back on. Things that would probably need to be done here would be to evaluate whether the tests can be effectively parallelized (perhaps the spec tests)
  or if the number of simultaneous processes can be reduced to keep from bumping up against any limits that exist.<br/><br/>Right now nobody is actively working on this (there are higher priorities)
