@@ -26,66 +26,7 @@ _, we see the dreaded `Resource not accessible by integration` error. Example fr
 <br/>- Followed  <a href="https://jestjs.io/docs/ecmascript-modules">this guide by Jest</a> 
 
  and used `NODE_OPTIONS=\"$NODE_OPTIONS --experimental-vm-modules\"`. This actually felt like it made progress for once but then later failed because the test suite \"could not locate jest\".<br/>- I have also tried deleting, swapping packages, altering import statements, etc more times than I can count" ]]></description></item><item>	<title>Request: add a search bar to every page</title>	<link>https://github.com/github/choosealicense.com/issues/1184</link>	<description><![CDATA[It woul be great if there was a basic search bar through all the supported licenses. I prefer to view summaries of licenses on your website, so it's helpful to be able to jump to the page for a specific license.<br/><br/>Implementation options:<br/>* A basic search bar which loads a search result page is minimum<br/>* Ajax live search (i.e., autocomplete/search suggestions)
- would be a bonus, where you can jump right to the resulting page right from the autocomplete/search suggestions." ]]></description></item><item>	<title>Update or replace very old vendored version of jquery</title>	<link>https://github.com/github/choosealicense.com/issues/1139</link>	<description><![CDATA[1.11.0 is vendored, 3.7.3 is latest. < 3.5.0 has various reported XSS vulnerabilities; though I don't see how they'd be exploitable through this site, it'd be nice to be rid of the old version anyway. Or better, remove the need for jquery?<br/><br/>Thoughts or pull requests welcome." ]]></description></item><item>	<title>Is clipboard.js still needed?</title>	<link>https://github.com/github/choosealicense.com/issues/1138</link>	<description><![CDATA[Another followup to #1136 <br/><br/><br/>Standard https://caniuse.com/clipboard `copy` might be supported by every browser that matters, which might make it possible to dispense with `clipboard.js`.<br/><br/>Not certain, thoughts or PRs welcome." ]]></description></item><item>	<title>Is normalize.css still needed?</title>	<link>https://github.com/github/choosealicense.com/issues/1137</link>	<description><![CDATA[It seems maybe `normalize.css` could be tossed out as well? Many random comments along the lines of https://www.reddit.com/r/webdev/comments/10kqgju/how_relevant_is_normalize_css_in_2023/<br/><br/>_Originally posted by @mlinksva in https://github.com/github/choosealicense.com/issues/1136#issuecomment-1694110628_<br/>            " ]]></description></item><item>	<title>`Publishing actions in GitHub Marketplace` appears to wrongly suggest `Each repository must contain a single action`</title>	<link>https://github.com/github/docs/issues/35437</link>	<description><![CDATA[### Code of Conduct<br/><br/>- [X] I have read and agree to the GitHub Docs project's  <a href="https://github.com/github/docs/blob/main/.github/CODE_OF_CONDUCT.md">Code of Conduct</a> 
-
-<br/><br/>### What article on docs.github.com is affected?<br/><br/>https://docs.github.com/en/actions/sharing-automations/creating-actions/publishing-actions-in-github-marketplace<br/><br/><br/>### What part(s)
- of the article would you like to see updated?<br/><br/>> Actions are published to GitHub Marketplace immediately and aren't reviewed by GitHub as long as they meet these requirements:<br/>><br/>> * The action must be in a public repository.<br/>> * Each repository must contain a single action.<br/><br/>I'm not sure this is a real requirement... At the very least, the  <a href="https://github.com/actions">GitHub Actions organization</a> 
-
- violates this:<br/><br/>*  <a href="https://github.com/actions/cache/blob/6849a6489940f00c2f30c0fb92c6274307ccb58a/restore/action.yml#L4">actions/cache ... restore/action.yml</a> 
-
-<br/>*  <a href="https://github.com/actions/upload-artifact/blob/184d73b71b93c222403b2e7f1ffebe4508014249/merge/action.yml#L4">actions/upload-artifact ... merge/action.yml</a> 
-
-<br/>*  <a href="https://github.com/actions/attest-build-provenance/blob/a379071546e82e79104ace919b0399ecb52c6f87/predicate/action.yml#L4">actions/attest-build-provenance ... predicate/action.yml</a> 
-
-<br/>*  <a href="https://github.com/actions/cache/blob/6849a6489940f00c2f30c0fb92c6274307ccb58a/save/action.yml#L4">actions/cache ... save/action.yml</a> 
-
-<br/>*  <a href="https://github.com/actions/github-script/blob/4020e461acd7a80762cdfff123a1fde368246fa4/.github/actions/install-dependencies/action.yml#L4">actions/github-script ... install-dependencies/action.yml</a> 
-
-<br/>*  <a href="https://github.com/actions/versions-package-tools/blob/4028baf98812bf811713b9f0755a3991d4d194ff/.github/actions/send-slack-notification/action.yml#L4">actions/versions-package-tools ... actions/send-slack-notification/action.yml</a> 
-
-<br/><br/> <a href="https://github.com/github/codeql-action/">GitHub codeql-action</a> 
-
- definitely doesn't conform to this:<br/>*  <a href="https://github.com/github/codeql-action/blob/3d3d628990a5f99229dd9fa1821cc5a4f31b613b/init/action.yml#L4">init</a> 
-
-<br/>*  <a href="https://github.com/github/codeql-action/blob/3d3d628990a5f99229dd9fa1821cc5a4f31b613b/analyze/action.yml#L4">analyze</a> 
-
-<br/>*  <a href="https://github.com/github/codeql-action/blob/3d3d628990a5f99229dd9fa1821cc5a4f31b613b/autobuild/action.yml">autobuild</a> 
-
-<br/>*  <a href="https://github.com/github/codeql-action/blob/3d3d628990a5f99229dd9fa1821cc5a4f31b613b/start-proxy/action.yml">start-proxy</a> 
-
-<br/>*  <a href="https://github.com/github/codeql-action/blob/3d3d628990a5f99229dd9fa1821cc5a4f31b613b/resolve-environment/action.yml">resolve-environment</a> 
-
-<br/>*  <a href="https://github.com/github/codeql-action/blob/3d3d628990a5f99229dd9fa1821cc5a4f31b613b/upload-sarif/action.yml#L4">upload-sarif</a> 
-
-<br/><br/>At least  <a href="https://github.com/marketplace/actions/endor-labs-scan">Endor Labs Scan</a> 
-
- has multiple  <a href="<br/>https://github.com/search?q=path%3A%2Faction.yml+NOT+org%3Aactions+language%3AYAML+repo%3Aendorlabs%2Fgithub-action&amp;type=code">`action.yml` files</a> 
-
-<br/><br/>*  <a href="https://github.com/marketplace/actions/github-action-for-go-fuzz">GitHub Action for Go Fuzz</a> 
-
- has  <a href="https://github.com/search?q=repo%3Ashogo82148%2Factions-go-fuzz%20path%3A%2Faction.yml&amp;type=code">two</a> 
-
-<br/>*  <a href="https://github.com/marketplace/actions/diffblue-cover-pipeline">Diffblue Cover Pipeline</a> 
-
- has  <a href="https://github.com/search?q=repo%3Adiffblue%2Fcover-github-action%20path%3A%2Faction.yml&amp;type=code">four</a> 
-
-<br/>*  <a href="https://github.com/marketplace/actions/datadog-synthetics-action">DataDog Synthetics Action</a> 
-
- has  <a href="https://github.com/search?q=repo%3AOpenActions%2Fdd-synthetics%20path%3A%2Faction.yml&amp;type=code">one</a> 
-
-<br/>*  <a href="https://github.com/marketplace/actions/infisical-loader">Infisical Loader</a> 
-
- has  <a href="https://github.com/search?q=repo%3Aflarco%2Finfisical-action%20path%3A%2Faction.yml&amp;type=code">one</a> 
-
-<br/>*  <a href="https://github.com/marketplace/actions/tree-sitter-parser-tests">Tree-sitter parser tests</a> 
-
- has  <a href="https://github.com/search?q=repo%3Atree-sitter%2Fparser-test-action%20path%3A%2Faction.yml&amp;type=code">five</a> 
-
-<br/>*  <a href="https://github.com/marketplace/actions/zeet-deploy">Zeet Deploy</a> 
-
- has  <a href="https://github.com/search?q=repo%3Azeet-co%2Fzeet-deploy-action%20path%3A%2Faction.yml&amp;type=code">one</a> 
-
-<br/><br/>I certainly haven't seen anything preventing it.<br/><br/>### Additional information<br/><br/>_No response_" ]]></description></item><item>	<title>[Feature]: Option for slanted edges</title>	<link>https://github.com/github/gh-skyline/issues/52</link>	<description><![CDATA[### Description<br/><br/>Currently, the base of the output model has vertically straight edges. Although this looks fine by itself, it doesn't match models previously created/printed from the old GH skyline experience (https://skyline.github.com/)
+ would be a bonus, where you can jump right to the resulting page right from the autocomplete/search suggestions." ]]></description></item><item>	<title>Update or replace very old vendored version of jquery</title>	<link>https://github.com/github/choosealicense.com/issues/1139</link>	<description><![CDATA[1.11.0 is vendored, 3.7.3 is latest. < 3.5.0 has various reported XSS vulnerabilities; though I don't see how they'd be exploitable through this site, it'd be nice to be rid of the old version anyway. Or better, remove the need for jquery?<br/><br/>Thoughts or pull requests welcome." ]]></description></item><item>	<title>Is clipboard.js still needed?</title>	<link>https://github.com/github/choosealicense.com/issues/1138</link>	<description><![CDATA[Another followup to #1136 <br/><br/><br/>Standard https://caniuse.com/clipboard `copy` might be supported by every browser that matters, which might make it possible to dispense with `clipboard.js`.<br/><br/>Not certain, thoughts or PRs welcome." ]]></description></item><item>	<title>Is normalize.css still needed?</title>	<link>https://github.com/github/choosealicense.com/issues/1137</link>	<description><![CDATA[It seems maybe `normalize.css` could be tossed out as well? Many random comments along the lines of https://www.reddit.com/r/webdev/comments/10kqgju/how_relevant_is_normalize_css_in_2023/<br/><br/>_Originally posted by @mlinksva in https://github.com/github/choosealicense.com/issues/1136#issuecomment-1694110628_<br/>            " ]]></description></item><item>	<title>[Feature]: Option for slanted edges</title>	<link>https://github.com/github/gh-skyline/issues/52</link>	<description><![CDATA[### Description<br/><br/>Currently, the base of the output model has vertically straight edges. Although this looks fine by itself, it doesn't match models previously created/printed from the old GH skyline experience (https://skyline.github.com/)
 . In said solution, the edges were slightly slanted as to make the bottom of the base slightly larger than the top.<br/><br/>Having a command line flag to generate the model with these slanted edges would more easily let users 3D-print the skyline matching their previous ones from the old website, thus eliminating the need to re-print previous years for consistency across models.<br/><br/>### Requirements<br/><br/>- Any way for the user to specify that a slanted base is wanted.<br/><br/>### Definition of Done<br/><br/>- [ ] A command line flag or option (see additional notes)
  letting the user choose to have a slanted base<br/>- [ ] Updated command line flag/option documentation<br/><br/>### Additional Notes<br/><br/>There's two approaches I can see to this:<br/>- letting the user pass a flag (for example `-s` for *slanted base*)
 . When this flag is passed, the command will generate a model with a slanted base.<br/>- Introducing an option for \"base type\" (or something similar)
