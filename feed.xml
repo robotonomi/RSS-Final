@@ -14,59 +14,44 @@ _, we see the dreaded `Resource not accessible by integration` error. Example fr
 . If there are errors there, please fix them in  <a href="https://github.com/spdx/license-list-XML">spdx/license-list-XML</a> 
 
  (from which the plain text version is generated)
- so as to minimize license text variation and make it easier for choosealicense.com to eventually consume license texts directly from SPDX.<br/><br/>The test could clone spdx/license-list-data and compare each license we have cataloged in this project. Many existing licenses would probably have to be marked as expected failures due to bugs in SPDX output and discrepancies in how this project has cataloged some licenses. But we should address upfront for any new license cataloged here, and continue to chip away at the existing inconsistencies." ]]></description></item><item>	<title>[Repo Assist] Monthly Activity 2026-05</title>	<link>https://github.com/github/gh-aw-mcpg/issues/4929</link>	<description><![CDATA[🤖 *Repo Assist here — I'm an automated AI assistant for this repository.*<br/><br/>## Activity for May 2026<br/><br/>## Suggested Actions for Maintainer<br/><br/>* [ ] **Review PR** `repo-assist/fix-rust-guard-6458`: `refactor(rust-guard)
-: use policy_integrity constants and add security-tool label tests` — closes #6458 —  <a href="https://github.com/github/gh-aw-mcpg/compare/repo-assist/fix-rust-guard-6458">View branch</a> 
-
-<br/>* [ ] **Review PR** `repo-assist/fix-tracing-service-name-env`: `fix(cmd)
-: apply OTEL_SERVICE_NAME env var override to tracing config` —  <a href="https://github.com/github/gh-aw-mcpg/compare/repo-assist/fix-tracing-service-name-env">View branch</a> 
-
-<br/>* [ ] **Review PR** `repo-assist/test-graphql-helpers-6276`: `test(rust-guard)
-: add GraphQL path and URL-parsing tests for helpers.rs` — closes #6276 —  <a href="https://github.com/github/gh-aw-mcpg/compare/repo-assist/test-graphql-helpers-6276">View branch</a> 
-
-<br/>* [ ] **Review PR** `repo-assist/improve-extract-wasm-call-result`: `refactor(guard)
-: extract decodeWasmCallResult and unmarshalWasmResponse helpers` — closes #6384, #6385 —  <a href="https://github.com/github/gh-aw-mcpg/compare/repo-assist/improve-extract-wasm-call-result">View branch</a> 
+ so as to minimize license text variation and make it easier for choosealicense.com to eventually consume license texts directly from SPDX.<br/><br/>The test could clone spdx/license-list-data and compare each license we have cataloged in this project. Many existing licenses would probably have to be marked as expected failures due to bugs in SPDX output and discrepancies in how this project has cataloged some licenses. But we should address upfront for any new license cataloged here, and continue to chip away at the existing inconsistencies." ]]></description></item><item>	<title>[Repo Assist] Monthly Activity 2026-05</title>	<link>https://github.com/github/gh-aw-mcpg/issues/4929</link>	<description><![CDATA[🤖 *Repo Assist here — I'm an automated AI assistant for this repository.*<br/><br/>## Activity for May 2026<br/><br/>## Suggested Actions for Maintainer<br/><br/>* [ ] **Check comment** #6520: Repo Assist investigated `max-calls`/`tool-call-limits` status — feature not in codebase, ready to implement if confirmed —  <a href="https://github.com/github/gh-aw-mcpg/issues/6520">View</a> 
 
 <br/>* [ ] **Check comment** #6382: Repo Assist confirmed guard coverage gaps and provided exact fix snippets —  <a href="https://github.com/github/gh-aw-mcpg/issues/6382">View</a> 
 
-<br/><br/>## Future Work for Repo Assist<br/><br/>- per-tool jq filters (#5270)
-, session timeout move (#5071)
-, wasm race (#5666)
-<br/><br/>## Guard Filtering Summary<br/><br/>No objects were filtered by the guard policy.<br/><br/>## Run History<br/><br/>### 2026-05-25 13:45 UTC —  <a href="https://github.com/github/gh-aw-mcpg/actions/runs/26403628726">Run</a> 
+<br/>* [ ] **Review issue** #6524: Merge three identical security-alert match arms + add `actions_get` tests —  <a href="https://github.com/github/gh-aw-mcpg/issues/6524">View</a> 
 
-<br/>- 🔧 Created PR (branch `repo-assist/fix-rust-guard-6458`)
-: `refactor(rust-guard)
+<br/><br/>## Future Work for Repo Assist<br/><br/>- Implement `max-calls` feature (#6520)
+ if maintainer confirms<br/>- per-tool jq filters (#5270)
+, session timeout (#5071)
+, `actions_get` test coverage (#6524)
+<br/><br/>## Guard Filtering Summary<br/><br/>No objects were filtered by the guard policy.<br/><br/>## Run History<br/><br/>### 2026-05-26 13:39 UTC —  <a href="https://github.com/github/gh-aw-mcpg/actions/runs/26451493301">Run</a> 
+
+<br/>- 🏷️ Labelled #6520 with `enhancement`<br/>- 💬 Commented on #6520: investigated `max-calls` / `tool-call-limits` status — feature absent from codebase, outlined implementation steps<br/><br/>### 2026-05-25 13:45 UTC —  <a href="https://github.com/github/gh-aw-mcpg/actions/runs/26403628726">Run</a> 
+
+<br/>- 🔧 Created branch `repo-assist/fix-rust-guard-6458`: `refactor(rust-guard)
 : use policy_integrity constants and add security-tool label tests` — closes #6458 (3 new security tests, all 435 Rust tests pass)
 <br/><br/>### 2026-05-24 13:00 UTC —  <a href="https://github.com/github/gh-aw-mcpg/actions/runs/26361900843">Run</a> 
 
-<br/>- 🔧 Created PR (branch `repo-assist/improve-extract-wasm-call-result`)
-: `refactor(guard)
+<br/>- 🔧 Created branch `repo-assist/improve-extract-wasm-call-result`: `refactor(guard)
 : extract decodeWasmCallResult and unmarshalWasmResponse helpers` — closes #6384, #6385<br/>- 💬 Commented on #6382: confirmed guard DIFC labeling gaps and provided exact `tool_rules.rs` fix snippets<br/><br/>### 2026-05-23 13:00 UTC —  <a href="https://github.com/github/gh-aw-mcpg/actions/runs/26333324436">Run</a> 
 
-<br/>- 🔧 Created PR (branch `repo-assist/fix-tracing-service-name-env`)
-: `fix(cmd)
+<br/>- 🔧 Created branch `repo-assist/fix-tracing-service-name-env`: `fix(cmd)
 : apply OTEL_SERVICE_NAME env var override to tracing config` — 2 new tracing tests<br/><br/>### 2026-05-22 13:30 UTC —  <a href="https://github.com/github/gh-aw-mcpg/actions/runs/26290597498">Run</a> 
 
-<br/>- 🔧 Created PR (branch `repo-assist/test-graphql-helpers-6276`)
-: `test(rust-guard)
+<br/>- 🔧 Created branch `repo-assist/test-graphql-helpers-6276`: `test(rust-guard)
 : add GraphQL path and URL-parsing tests for helpers.rs` — closes #6276 (14 new tests, all 427 pass)
 <br/>- 💬 Commented on #6265: verified duplicate flag-override analysis; suggested `applyFlagOrEnv` helper<br/>- 🏷️ Labelled #6265 with `help wanted`, `refactor`<br/><br/>### 2026-05-21 13:44 UTC —  <a href="https://github.com/github/gh-aw-mcpg/actions/runs/26229804301">Run</a> 
 
-<br/>- 🔧 Created PR (branch `repo-assist/fix-issue-6193-hoist-invariant-response-paths`)
-: `perf(rust-guard)
+<br/>- 🔧 Created branch `repo-assist/fix-issue-6193-hoist-invariant-response-paths`: `perf(rust-guard)
 : hoist invariant label calls and dedup PR number extraction` — closes #6193<br/><br/>### 2026-05-20 13:39 UTC —  <a href="https://github.com/github/gh-aw-mcpg/actions/runs/26165758577">Run</a> 
 
-<br/>- 🔧 Created PR (branch `repo-assist/test-task9-list-commits-response-paths-2026-05-20`)
-: `test(rust-guard)
-: add list_commits tests for default/feature-branch integrity` — closes #6086<br/>- 🔧 Created PR (branch `repo-assist/eng-pin-container-yml-actions-2026-05-20`)
-: `ci: pin container.yml actions to commit SHAs`<br/><br/>### 2026-05-19 13:43 UTC —  <a href="https://github.com/github/gh-aw-mcpg/actions/runs/26101078502">Run</a> 
+<br/>- 🔧 Created branch `repo-assist/test-task9-list-commits-response-paths-2026-05-20`: `test(rust-guard)
+: add list_commits tests for default/feature-branch integrity` — closes #6086<br/>- 🔧 Created branch `repo-assist/eng-pin-container-yml-actions-2026-05-20`: `ci: pin container.yml actions to commit SHAs`<br/><br/>### 2026-05-19 13:43 UTC —  <a href="https://github.com/github/gh-aw-mcpg/actions/runs/26101078502">Run</a> 
 
-<br/>- 🔧 Created PR (branch `repo-assist/fix-issue-5997-hoist-invariant-loop-allocs`)
-: `perf(rust-guard)
-: hoist invariant integrity/secrecy calls outside per-item loops` — closes #5997<br/>- 🔧 Created PR (branch `repo-assist/eng-pin-github-script-2026-05-19`)
-: `ci: pin actions/github-script to SHA and upgrade v7→v9.0.0`<br/><br/>### 2026-05-18 13:56 UTC —  <a href="https://github.com/github/gh-aw-mcpg/actions/runs/26037996208">Run</a> 
+<br/>- 🔧 Created branch `repo-assist/fix-issue-5997-hoist-invariant-loop-allocs`: `perf(rust-guard)
+: hoist invariant integrity/secrecy calls outside per-item loops` — closes #5997<br/>- 🔧 Created branch `repo-assist/eng-pin-github-script-2026-05-19`: `ci: pin actions/github-script to SHA and upgrade v7→v9.0.0`<br/><br/>### 2026-05-18 13:56 UTC —  <a href="https://github.com/github/gh-aw-mcpg/actions/runs/26037996208">Run</a> 
 
-<br/>- 🔧 Created PR (branch `repo-assist/eng-pin-github-script-ci-2026-05-18`)
-: `ci: pin actions/github-script to SHA and upgrade v7→v9 in ci.yml`<br/><br/>### 2026-05-17 13:00 UTC —  <a href="https://github.com/github/gh-aw-mcpg/actions/runs/25991516406">Run</a> 
+<br/>- 🔧 Created branch `repo-assist/eng-pin-github-script-ci-2026-05-18`: `ci: pin actions/github-script to SHA and upgrade v7→v9 in ci.yml`<br/><br/>### 2026-05-17 13:00 UTC —  <a href="https://github.com/github/gh-aw-mcpg/actions/runs/25991516406">Run</a> 
 
 <br/>- 🔧 Created PR #5880: `refactor(server)
 : add legacyPolicySource constant` — closed by maintainer<br/>- 💬 Commented on #5866: addressed Pattern A; left Pattern B (symmetric log helpers)
@@ -75,67 +60,48 @@ _, we see the dreaded `Resource not accessible by integration` error. Example fr
 <br/>- 🏷️ Labelled #5810, #5803, #5777 with `needs triage`<br/>- 💬 Commented on #5799: verified `discussion_comment_write` guard gap<br/><br/>### 2026-05-15 13:15 UTC —  <a href="https://github.com/github/gh-aw-mcpg/actions/runs/25919732186">Run</a> 
 
 <br/>- 🏷️ Labelled #5741, #5735, #5718 with `automated smoke tests`<br/>- 🔧 Created PR #5750: `refactor(config)
-: add envutil.HasEnvVar and hasMapKeyVariants helpers` — closes #5733 — **merged**<br/><br/>> [!WARNING]<br/>> <details><br/>> <summary>Firewall blocked 1 domain</summary><br/>><br/>> The following domain was blocked by the firewall during workflow execution:<br/>><br/>> - `proxy.golang.org`<br/>>> To allow these domains, add them to the `network.allowed` list in your workflow frontmatter:<br/>><br/>> ```yaml<br/>> network:<br/>>   allowed:<br/>>     - defaults<br/>>     - \"proxy.golang.org\"<br/>> ```<br/>><br/>> See  <a href="https://github.github.com/gh-aw/reference/network/">Network Configuration</a> 
+: add envutil.HasEnvVar and hasMapKeyVariants helpers` — closes #5733 — **merged**<br/><br/>> Generated by  <a href="https://github.com/github/gh-aw-mcpg/actions/runs/26451493301">Repo Assist</a> 
 
- for more information.<br/>><br/>> </details><br/><br/><br/>> Generated by  <a href="https://github.com/github/gh-aw-mcpg/actions/runs/26403628726/agentic_workflow">Repo Assist</a> 
+ · sonnet46 2.6M ·  <a href="https://github.com/search?q=repo%3Agithub%2Fgh-aw-mcpg+is%3Aissue+%22gh-aw-workflow-call-id%3A+github%2Fgh-aw-mcpg%2Frepo-assist%22&amp;type=issues">◷</a> 
 
- · ● 2M ·  <a href="https://github.com/search?q=repo%3Agithub%2Fgh-aw-mcpg+is%3Aissue+%22gh-aw-workflow-call-id%3A+github%2Fgh-aw-mcpg%2Frepo-assist%22&amp;type=issues">◷</a> 
-
-<br/>><br/>> To install this  <a href="https://github.com/githubnext/agentics/blob/851905c06e905bf362a9f6cc54f912e3df747d55/workflows/repo-assist.md">agentic workflow</a> 
-
-, run<br/>> ```<br/>> gh aw add githubnext/agentics/workflows/repo-assist.md@851905c06e905bf362a9f6cc54f912e3df747d55<br/>> ```<br/><br/><!-- gh-aw-agentic-workflow: Repo Assist, engine: copilot, version: 1.0.40, model: claude-sonnet-4.6, id: 26403628726, workflow_id: repo-assist, run: https://github.com/github/gh-aw-mcpg/actions/runs/26403628726 -->" ]]></description></item><item>	<title>[Repo Assist] Monthly Activity 2026-05</title>	<link>https://github.com/github/gh-aw-mcpg/issues/4929</link>	<description><![CDATA[🤖 *Repo Assist here — I'm an automated AI assistant for this repository.*<br/><br/>## Activity for May 2026<br/><br/>## Suggested Actions for Maintainer<br/><br/>* [ ] **Review PR** `repo-assist/fix-rust-guard-6458`: `refactor(rust-guard)
-: use policy_integrity constants and add security-tool label tests` — closes #6458 —  <a href="https://github.com/github/gh-aw-mcpg/compare/repo-assist/fix-rust-guard-6458">View branch</a> 
-
-<br/>* [ ] **Review PR** `repo-assist/fix-tracing-service-name-env`: `fix(cmd)
-: apply OTEL_SERVICE_NAME env var override to tracing config` —  <a href="https://github.com/github/gh-aw-mcpg/compare/repo-assist/fix-tracing-service-name-env">View branch</a> 
-
-<br/>* [ ] **Review PR** `repo-assist/test-graphql-helpers-6276`: `test(rust-guard)
-: add GraphQL path and URL-parsing tests for helpers.rs` — closes #6276 —  <a href="https://github.com/github/gh-aw-mcpg/compare/repo-assist/test-graphql-helpers-6276">View branch</a> 
-
-<br/>* [ ] **Review PR** `repo-assist/improve-extract-wasm-call-result`: `refactor(guard)
-: extract decodeWasmCallResult and unmarshalWasmResponse helpers` — closes #6384, #6385 —  <a href="https://github.com/github/gh-aw-mcpg/compare/repo-assist/improve-extract-wasm-call-result">View branch</a> 
+<br/>><br/><details><br/><summary>Add this agentic workflows to your repo</summary><br/><br/>To install this agentic workflow, run<br/><br/>```<br/>gh aw add githubnext/agentics/workflows/repo-assist.md@851905c06e905bf362a9f6cc54f912e3df747d55<br/>```<br/></details><br/><br/><br/><!-- gh-aw-agentic-workflow: Repo Assist, engine: copilot, version: 1.0.52, model: claude-sonnet-4.6, id: 26451493301, workflow_id: repo-assist, run: https://github.com/github/gh-aw-mcpg/actions/runs/26451493301 -->" ]]></description></item><item>	<title>[Repo Assist] Monthly Activity 2026-05</title>	<link>https://github.com/github/gh-aw-mcpg/issues/4929</link>	<description><![CDATA[🤖 *Repo Assist here — I'm an automated AI assistant for this repository.*<br/><br/>## Activity for May 2026<br/><br/>## Suggested Actions for Maintainer<br/><br/>* [ ] **Check comment** #6520: Repo Assist investigated `max-calls`/`tool-call-limits` status — feature not in codebase, ready to implement if confirmed —  <a href="https://github.com/github/gh-aw-mcpg/issues/6520">View</a> 
 
 <br/>* [ ] **Check comment** #6382: Repo Assist confirmed guard coverage gaps and provided exact fix snippets —  <a href="https://github.com/github/gh-aw-mcpg/issues/6382">View</a> 
 
-<br/><br/>## Future Work for Repo Assist<br/><br/>- per-tool jq filters (#5270)
-, session timeout move (#5071)
-, wasm race (#5666)
-<br/><br/>## Guard Filtering Summary<br/><br/>No objects were filtered by the guard policy.<br/><br/>## Run History<br/><br/>### 2026-05-25 13:45 UTC —  <a href="https://github.com/github/gh-aw-mcpg/actions/runs/26403628726">Run</a> 
+<br/>* [ ] **Review issue** #6524: Merge three identical security-alert match arms + add `actions_get` tests —  <a href="https://github.com/github/gh-aw-mcpg/issues/6524">View</a> 
 
-<br/>- 🔧 Created PR (branch `repo-assist/fix-rust-guard-6458`)
-: `refactor(rust-guard)
+<br/><br/>## Future Work for Repo Assist<br/><br/>- Implement `max-calls` feature (#6520)
+ if maintainer confirms<br/>- per-tool jq filters (#5270)
+, session timeout (#5071)
+, `actions_get` test coverage (#6524)
+<br/><br/>## Guard Filtering Summary<br/><br/>No objects were filtered by the guard policy.<br/><br/>## Run History<br/><br/>### 2026-05-26 13:39 UTC —  <a href="https://github.com/github/gh-aw-mcpg/actions/runs/26451493301">Run</a> 
+
+<br/>- 🏷️ Labelled #6520 with `enhancement`<br/>- 💬 Commented on #6520: investigated `max-calls` / `tool-call-limits` status — feature absent from codebase, outlined implementation steps<br/><br/>### 2026-05-25 13:45 UTC —  <a href="https://github.com/github/gh-aw-mcpg/actions/runs/26403628726">Run</a> 
+
+<br/>- 🔧 Created branch `repo-assist/fix-rust-guard-6458`: `refactor(rust-guard)
 : use policy_integrity constants and add security-tool label tests` — closes #6458 (3 new security tests, all 435 Rust tests pass)
 <br/><br/>### 2026-05-24 13:00 UTC —  <a href="https://github.com/github/gh-aw-mcpg/actions/runs/26361900843">Run</a> 
 
-<br/>- 🔧 Created PR (branch `repo-assist/improve-extract-wasm-call-result`)
-: `refactor(guard)
+<br/>- 🔧 Created branch `repo-assist/improve-extract-wasm-call-result`: `refactor(guard)
 : extract decodeWasmCallResult and unmarshalWasmResponse helpers` — closes #6384, #6385<br/>- 💬 Commented on #6382: confirmed guard DIFC labeling gaps and provided exact `tool_rules.rs` fix snippets<br/><br/>### 2026-05-23 13:00 UTC —  <a href="https://github.com/github/gh-aw-mcpg/actions/runs/26333324436">Run</a> 
 
-<br/>- 🔧 Created PR (branch `repo-assist/fix-tracing-service-name-env`)
-: `fix(cmd)
+<br/>- 🔧 Created branch `repo-assist/fix-tracing-service-name-env`: `fix(cmd)
 : apply OTEL_SERVICE_NAME env var override to tracing config` — 2 new tracing tests<br/><br/>### 2026-05-22 13:30 UTC —  <a href="https://github.com/github/gh-aw-mcpg/actions/runs/26290597498">Run</a> 
 
-<br/>- 🔧 Created PR (branch `repo-assist/test-graphql-helpers-6276`)
-: `test(rust-guard)
+<br/>- 🔧 Created branch `repo-assist/test-graphql-helpers-6276`: `test(rust-guard)
 : add GraphQL path and URL-parsing tests for helpers.rs` — closes #6276 (14 new tests, all 427 pass)
 <br/>- 💬 Commented on #6265: verified duplicate flag-override analysis; suggested `applyFlagOrEnv` helper<br/>- 🏷️ Labelled #6265 with `help wanted`, `refactor`<br/><br/>### 2026-05-21 13:44 UTC —  <a href="https://github.com/github/gh-aw-mcpg/actions/runs/26229804301">Run</a> 
 
-<br/>- 🔧 Created PR (branch `repo-assist/fix-issue-6193-hoist-invariant-response-paths`)
-: `perf(rust-guard)
+<br/>- 🔧 Created branch `repo-assist/fix-issue-6193-hoist-invariant-response-paths`: `perf(rust-guard)
 : hoist invariant label calls and dedup PR number extraction` — closes #6193<br/><br/>### 2026-05-20 13:39 UTC —  <a href="https://github.com/github/gh-aw-mcpg/actions/runs/26165758577">Run</a> 
 
-<br/>- 🔧 Created PR (branch `repo-assist/test-task9-list-commits-response-paths-2026-05-20`)
-: `test(rust-guard)
-: add list_commits tests for default/feature-branch integrity` — closes #6086<br/>- 🔧 Created PR (branch `repo-assist/eng-pin-container-yml-actions-2026-05-20`)
-: `ci: pin container.yml actions to commit SHAs`<br/><br/>### 2026-05-19 13:43 UTC —  <a href="https://github.com/github/gh-aw-mcpg/actions/runs/26101078502">Run</a> 
+<br/>- 🔧 Created branch `repo-assist/test-task9-list-commits-response-paths-2026-05-20`: `test(rust-guard)
+: add list_commits tests for default/feature-branch integrity` — closes #6086<br/>- 🔧 Created branch `repo-assist/eng-pin-container-yml-actions-2026-05-20`: `ci: pin container.yml actions to commit SHAs`<br/><br/>### 2026-05-19 13:43 UTC —  <a href="https://github.com/github/gh-aw-mcpg/actions/runs/26101078502">Run</a> 
 
-<br/>- 🔧 Created PR (branch `repo-assist/fix-issue-5997-hoist-invariant-loop-allocs`)
-: `perf(rust-guard)
-: hoist invariant integrity/secrecy calls outside per-item loops` — closes #5997<br/>- 🔧 Created PR (branch `repo-assist/eng-pin-github-script-2026-05-19`)
-: `ci: pin actions/github-script to SHA and upgrade v7→v9.0.0`<br/><br/>### 2026-05-18 13:56 UTC —  <a href="https://github.com/github/gh-aw-mcpg/actions/runs/26037996208">Run</a> 
+<br/>- 🔧 Created branch `repo-assist/fix-issue-5997-hoist-invariant-loop-allocs`: `perf(rust-guard)
+: hoist invariant integrity/secrecy calls outside per-item loops` — closes #5997<br/>- 🔧 Created branch `repo-assist/eng-pin-github-script-2026-05-19`: `ci: pin actions/github-script to SHA and upgrade v7→v9.0.0`<br/><br/>### 2026-05-18 13:56 UTC —  <a href="https://github.com/github/gh-aw-mcpg/actions/runs/26037996208">Run</a> 
 
-<br/>- 🔧 Created PR (branch `repo-assist/eng-pin-github-script-ci-2026-05-18`)
-: `ci: pin actions/github-script to SHA and upgrade v7→v9 in ci.yml`<br/><br/>### 2026-05-17 13:00 UTC —  <a href="https://github.com/github/gh-aw-mcpg/actions/runs/25991516406">Run</a> 
+<br/>- 🔧 Created branch `repo-assist/eng-pin-github-script-ci-2026-05-18`: `ci: pin actions/github-script to SHA and upgrade v7→v9 in ci.yml`<br/><br/>### 2026-05-17 13:00 UTC —  <a href="https://github.com/github/gh-aw-mcpg/actions/runs/25991516406">Run</a> 
 
 <br/>- 🔧 Created PR #5880: `refactor(server)
 : add legacyPolicySource constant` — closed by maintainer<br/>- 💬 Commented on #5866: addressed Pattern A; left Pattern B (symmetric log helpers)
@@ -144,67 +110,48 @@ _, we see the dreaded `Resource not accessible by integration` error. Example fr
 <br/>- 🏷️ Labelled #5810, #5803, #5777 with `needs triage`<br/>- 💬 Commented on #5799: verified `discussion_comment_write` guard gap<br/><br/>### 2026-05-15 13:15 UTC —  <a href="https://github.com/github/gh-aw-mcpg/actions/runs/25919732186">Run</a> 
 
 <br/>- 🏷️ Labelled #5741, #5735, #5718 with `automated smoke tests`<br/>- 🔧 Created PR #5750: `refactor(config)
-: add envutil.HasEnvVar and hasMapKeyVariants helpers` — closes #5733 — **merged**<br/><br/>> [!WARNING]<br/>> <details><br/>> <summary>Firewall blocked 1 domain</summary><br/>><br/>> The following domain was blocked by the firewall during workflow execution:<br/>><br/>> - `proxy.golang.org`<br/>>> To allow these domains, add them to the `network.allowed` list in your workflow frontmatter:<br/>><br/>> ```yaml<br/>> network:<br/>>   allowed:<br/>>     - defaults<br/>>     - \"proxy.golang.org\"<br/>> ```<br/>><br/>> See  <a href="https://github.github.com/gh-aw/reference/network/">Network Configuration</a> 
+: add envutil.HasEnvVar and hasMapKeyVariants helpers` — closes #5733 — **merged**<br/><br/>> Generated by  <a href="https://github.com/github/gh-aw-mcpg/actions/runs/26451493301">Repo Assist</a> 
 
- for more information.<br/>><br/>> </details><br/><br/><br/>> Generated by  <a href="https://github.com/github/gh-aw-mcpg/actions/runs/26403628726/agentic_workflow">Repo Assist</a> 
+ · sonnet46 2.6M ·  <a href="https://github.com/search?q=repo%3Agithub%2Fgh-aw-mcpg+is%3Aissue+%22gh-aw-workflow-call-id%3A+github%2Fgh-aw-mcpg%2Frepo-assist%22&amp;type=issues">◷</a> 
 
- · ● 2M ·  <a href="https://github.com/search?q=repo%3Agithub%2Fgh-aw-mcpg+is%3Aissue+%22gh-aw-workflow-call-id%3A+github%2Fgh-aw-mcpg%2Frepo-assist%22&amp;type=issues">◷</a> 
-
-<br/>><br/>> To install this  <a href="https://github.com/githubnext/agentics/blob/851905c06e905bf362a9f6cc54f912e3df747d55/workflows/repo-assist.md">agentic workflow</a> 
-
-, run<br/>> ```<br/>> gh aw add githubnext/agentics/workflows/repo-assist.md@851905c06e905bf362a9f6cc54f912e3df747d55<br/>> ```<br/><br/><!-- gh-aw-agentic-workflow: Repo Assist, engine: copilot, version: 1.0.40, model: claude-sonnet-4.6, id: 26403628726, workflow_id: repo-assist, run: https://github.com/github/gh-aw-mcpg/actions/runs/26403628726 -->" ]]></description></item><item>	<title>[Repo Assist] Monthly Activity 2026-05</title>	<link>https://github.com/github/gh-aw-mcpg/issues/4929</link>	<description><![CDATA[🤖 *Repo Assist here — I'm an automated AI assistant for this repository.*<br/><br/>## Activity for May 2026<br/><br/>## Suggested Actions for Maintainer<br/><br/>* [ ] **Review PR** `repo-assist/fix-rust-guard-6458`: `refactor(rust-guard)
-: use policy_integrity constants and add security-tool label tests` — closes #6458 —  <a href="https://github.com/github/gh-aw-mcpg/compare/repo-assist/fix-rust-guard-6458">View branch</a> 
-
-<br/>* [ ] **Review PR** `repo-assist/fix-tracing-service-name-env`: `fix(cmd)
-: apply OTEL_SERVICE_NAME env var override to tracing config` —  <a href="https://github.com/github/gh-aw-mcpg/compare/repo-assist/fix-tracing-service-name-env">View branch</a> 
-
-<br/>* [ ] **Review PR** `repo-assist/test-graphql-helpers-6276`: `test(rust-guard)
-: add GraphQL path and URL-parsing tests for helpers.rs` — closes #6276 —  <a href="https://github.com/github/gh-aw-mcpg/compare/repo-assist/test-graphql-helpers-6276">View branch</a> 
-
-<br/>* [ ] **Review PR** `repo-assist/improve-extract-wasm-call-result`: `refactor(guard)
-: extract decodeWasmCallResult and unmarshalWasmResponse helpers` — closes #6384, #6385 —  <a href="https://github.com/github/gh-aw-mcpg/compare/repo-assist/improve-extract-wasm-call-result">View branch</a> 
+<br/>><br/><details><br/><summary>Add this agentic workflows to your repo</summary><br/><br/>To install this agentic workflow, run<br/><br/>```<br/>gh aw add githubnext/agentics/workflows/repo-assist.md@851905c06e905bf362a9f6cc54f912e3df747d55<br/>```<br/></details><br/><br/><br/><!-- gh-aw-agentic-workflow: Repo Assist, engine: copilot, version: 1.0.52, model: claude-sonnet-4.6, id: 26451493301, workflow_id: repo-assist, run: https://github.com/github/gh-aw-mcpg/actions/runs/26451493301 -->" ]]></description></item><item>	<title>[Repo Assist] Monthly Activity 2026-05</title>	<link>https://github.com/github/gh-aw-mcpg/issues/4929</link>	<description><![CDATA[🤖 *Repo Assist here — I'm an automated AI assistant for this repository.*<br/><br/>## Activity for May 2026<br/><br/>## Suggested Actions for Maintainer<br/><br/>* [ ] **Check comment** #6520: Repo Assist investigated `max-calls`/`tool-call-limits` status — feature not in codebase, ready to implement if confirmed —  <a href="https://github.com/github/gh-aw-mcpg/issues/6520">View</a> 
 
 <br/>* [ ] **Check comment** #6382: Repo Assist confirmed guard coverage gaps and provided exact fix snippets —  <a href="https://github.com/github/gh-aw-mcpg/issues/6382">View</a> 
 
-<br/><br/>## Future Work for Repo Assist<br/><br/>- per-tool jq filters (#5270)
-, session timeout move (#5071)
-, wasm race (#5666)
-<br/><br/>## Guard Filtering Summary<br/><br/>No objects were filtered by the guard policy.<br/><br/>## Run History<br/><br/>### 2026-05-25 13:45 UTC —  <a href="https://github.com/github/gh-aw-mcpg/actions/runs/26403628726">Run</a> 
+<br/>* [ ] **Review issue** #6524: Merge three identical security-alert match arms + add `actions_get` tests —  <a href="https://github.com/github/gh-aw-mcpg/issues/6524">View</a> 
 
-<br/>- 🔧 Created PR (branch `repo-assist/fix-rust-guard-6458`)
-: `refactor(rust-guard)
+<br/><br/>## Future Work for Repo Assist<br/><br/>- Implement `max-calls` feature (#6520)
+ if maintainer confirms<br/>- per-tool jq filters (#5270)
+, session timeout (#5071)
+, `actions_get` test coverage (#6524)
+<br/><br/>## Guard Filtering Summary<br/><br/>No objects were filtered by the guard policy.<br/><br/>## Run History<br/><br/>### 2026-05-26 13:39 UTC —  <a href="https://github.com/github/gh-aw-mcpg/actions/runs/26451493301">Run</a> 
+
+<br/>- 🏷️ Labelled #6520 with `enhancement`<br/>- 💬 Commented on #6520: investigated `max-calls` / `tool-call-limits` status — feature absent from codebase, outlined implementation steps<br/><br/>### 2026-05-25 13:45 UTC —  <a href="https://github.com/github/gh-aw-mcpg/actions/runs/26403628726">Run</a> 
+
+<br/>- 🔧 Created branch `repo-assist/fix-rust-guard-6458`: `refactor(rust-guard)
 : use policy_integrity constants and add security-tool label tests` — closes #6458 (3 new security tests, all 435 Rust tests pass)
 <br/><br/>### 2026-05-24 13:00 UTC —  <a href="https://github.com/github/gh-aw-mcpg/actions/runs/26361900843">Run</a> 
 
-<br/>- 🔧 Created PR (branch `repo-assist/improve-extract-wasm-call-result`)
-: `refactor(guard)
+<br/>- 🔧 Created branch `repo-assist/improve-extract-wasm-call-result`: `refactor(guard)
 : extract decodeWasmCallResult and unmarshalWasmResponse helpers` — closes #6384, #6385<br/>- 💬 Commented on #6382: confirmed guard DIFC labeling gaps and provided exact `tool_rules.rs` fix snippets<br/><br/>### 2026-05-23 13:00 UTC —  <a href="https://github.com/github/gh-aw-mcpg/actions/runs/26333324436">Run</a> 
 
-<br/>- 🔧 Created PR (branch `repo-assist/fix-tracing-service-name-env`)
-: `fix(cmd)
+<br/>- 🔧 Created branch `repo-assist/fix-tracing-service-name-env`: `fix(cmd)
 : apply OTEL_SERVICE_NAME env var override to tracing config` — 2 new tracing tests<br/><br/>### 2026-05-22 13:30 UTC —  <a href="https://github.com/github/gh-aw-mcpg/actions/runs/26290597498">Run</a> 
 
-<br/>- 🔧 Created PR (branch `repo-assist/test-graphql-helpers-6276`)
-: `test(rust-guard)
+<br/>- 🔧 Created branch `repo-assist/test-graphql-helpers-6276`: `test(rust-guard)
 : add GraphQL path and URL-parsing tests for helpers.rs` — closes #6276 (14 new tests, all 427 pass)
 <br/>- 💬 Commented on #6265: verified duplicate flag-override analysis; suggested `applyFlagOrEnv` helper<br/>- 🏷️ Labelled #6265 with `help wanted`, `refactor`<br/><br/>### 2026-05-21 13:44 UTC —  <a href="https://github.com/github/gh-aw-mcpg/actions/runs/26229804301">Run</a> 
 
-<br/>- 🔧 Created PR (branch `repo-assist/fix-issue-6193-hoist-invariant-response-paths`)
-: `perf(rust-guard)
+<br/>- 🔧 Created branch `repo-assist/fix-issue-6193-hoist-invariant-response-paths`: `perf(rust-guard)
 : hoist invariant label calls and dedup PR number extraction` — closes #6193<br/><br/>### 2026-05-20 13:39 UTC —  <a href="https://github.com/github/gh-aw-mcpg/actions/runs/26165758577">Run</a> 
 
-<br/>- 🔧 Created PR (branch `repo-assist/test-task9-list-commits-response-paths-2026-05-20`)
-: `test(rust-guard)
-: add list_commits tests for default/feature-branch integrity` — closes #6086<br/>- 🔧 Created PR (branch `repo-assist/eng-pin-container-yml-actions-2026-05-20`)
-: `ci: pin container.yml actions to commit SHAs`<br/><br/>### 2026-05-19 13:43 UTC —  <a href="https://github.com/github/gh-aw-mcpg/actions/runs/26101078502">Run</a> 
+<br/>- 🔧 Created branch `repo-assist/test-task9-list-commits-response-paths-2026-05-20`: `test(rust-guard)
+: add list_commits tests for default/feature-branch integrity` — closes #6086<br/>- 🔧 Created branch `repo-assist/eng-pin-container-yml-actions-2026-05-20`: `ci: pin container.yml actions to commit SHAs`<br/><br/>### 2026-05-19 13:43 UTC —  <a href="https://github.com/github/gh-aw-mcpg/actions/runs/26101078502">Run</a> 
 
-<br/>- 🔧 Created PR (branch `repo-assist/fix-issue-5997-hoist-invariant-loop-allocs`)
-: `perf(rust-guard)
-: hoist invariant integrity/secrecy calls outside per-item loops` — closes #5997<br/>- 🔧 Created PR (branch `repo-assist/eng-pin-github-script-2026-05-19`)
-: `ci: pin actions/github-script to SHA and upgrade v7→v9.0.0`<br/><br/>### 2026-05-18 13:56 UTC —  <a href="https://github.com/github/gh-aw-mcpg/actions/runs/26037996208">Run</a> 
+<br/>- 🔧 Created branch `repo-assist/fix-issue-5997-hoist-invariant-loop-allocs`: `perf(rust-guard)
+: hoist invariant integrity/secrecy calls outside per-item loops` — closes #5997<br/>- 🔧 Created branch `repo-assist/eng-pin-github-script-2026-05-19`: `ci: pin actions/github-script to SHA and upgrade v7→v9.0.0`<br/><br/>### 2026-05-18 13:56 UTC —  <a href="https://github.com/github/gh-aw-mcpg/actions/runs/26037996208">Run</a> 
 
-<br/>- 🔧 Created PR (branch `repo-assist/eng-pin-github-script-ci-2026-05-18`)
-: `ci: pin actions/github-script to SHA and upgrade v7→v9 in ci.yml`<br/><br/>### 2026-05-17 13:00 UTC —  <a href="https://github.com/github/gh-aw-mcpg/actions/runs/25991516406">Run</a> 
+<br/>- 🔧 Created branch `repo-assist/eng-pin-github-script-ci-2026-05-18`: `ci: pin actions/github-script to SHA and upgrade v7→v9 in ci.yml`<br/><br/>### 2026-05-17 13:00 UTC —  <a href="https://github.com/github/gh-aw-mcpg/actions/runs/25991516406">Run</a> 
 
 <br/>- 🔧 Created PR #5880: `refactor(server)
 : add legacyPolicySource constant` — closed by maintainer<br/>- 💬 Commented on #5866: addressed Pattern A; left Pattern B (symmetric log helpers)
@@ -213,15 +160,11 @@ _, we see the dreaded `Resource not accessible by integration` error. Example fr
 <br/>- 🏷️ Labelled #5810, #5803, #5777 with `needs triage`<br/>- 💬 Commented on #5799: verified `discussion_comment_write` guard gap<br/><br/>### 2026-05-15 13:15 UTC —  <a href="https://github.com/github/gh-aw-mcpg/actions/runs/25919732186">Run</a> 
 
 <br/>- 🏷️ Labelled #5741, #5735, #5718 with `automated smoke tests`<br/>- 🔧 Created PR #5750: `refactor(config)
-: add envutil.HasEnvVar and hasMapKeyVariants helpers` — closes #5733 — **merged**<br/><br/>> [!WARNING]<br/>> <details><br/>> <summary>Firewall blocked 1 domain</summary><br/>><br/>> The following domain was blocked by the firewall during workflow execution:<br/>><br/>> - `proxy.golang.org`<br/>>> To allow these domains, add them to the `network.allowed` list in your workflow frontmatter:<br/>><br/>> ```yaml<br/>> network:<br/>>   allowed:<br/>>     - defaults<br/>>     - \"proxy.golang.org\"<br/>> ```<br/>><br/>> See  <a href="https://github.github.com/gh-aw/reference/network/">Network Configuration</a> 
+: add envutil.HasEnvVar and hasMapKeyVariants helpers` — closes #5733 — **merged**<br/><br/>> Generated by  <a href="https://github.com/github/gh-aw-mcpg/actions/runs/26451493301">Repo Assist</a> 
 
- for more information.<br/>><br/>> </details><br/><br/><br/>> Generated by  <a href="https://github.com/github/gh-aw-mcpg/actions/runs/26403628726/agentic_workflow">Repo Assist</a> 
+ · sonnet46 2.6M ·  <a href="https://github.com/search?q=repo%3Agithub%2Fgh-aw-mcpg+is%3Aissue+%22gh-aw-workflow-call-id%3A+github%2Fgh-aw-mcpg%2Frepo-assist%22&amp;type=issues">◷</a> 
 
- · ● 2M ·  <a href="https://github.com/search?q=repo%3Agithub%2Fgh-aw-mcpg+is%3Aissue+%22gh-aw-workflow-call-id%3A+github%2Fgh-aw-mcpg%2Frepo-assist%22&amp;type=issues">◷</a> 
-
-<br/>><br/>> To install this  <a href="https://github.com/githubnext/agentics/blob/851905c06e905bf362a9f6cc54f912e3df747d55/workflows/repo-assist.md">agentic workflow</a> 
-
-, run<br/>> ```<br/>> gh aw add githubnext/agentics/workflows/repo-assist.md@851905c06e905bf362a9f6cc54f912e3df747d55<br/>> ```<br/><br/><!-- gh-aw-agentic-workflow: Repo Assist, engine: copilot, version: 1.0.40, model: claude-sonnet-4.6, id: 26403628726, workflow_id: repo-assist, run: https://github.com/github/gh-aw-mcpg/actions/runs/26403628726 -->" ]]></description></item><item>	<title>[Feature]: Generate vector glyphs/icons instead of rasterized ones</title>	<link>https://github.com/github/gh-skyline/issues/81</link>	<description><![CDATA[### Description<br/><br/>Zooming in closely on the generated STL, the text and the icon look a bit grainy due, likely due to being rasterized. Compare one of the old skyline.github.com models:<br/><br/>! <a href="https://github.com/user-attachments/assets/d462e190-3cb3-4151-b427-949ac056d4d0">Image</a> 
+<br/>><br/><details><br/><summary>Add this agentic workflows to your repo</summary><br/><br/>To install this agentic workflow, run<br/><br/>```<br/>gh aw add githubnext/agentics/workflows/repo-assist.md@851905c06e905bf362a9f6cc54f912e3df747d55<br/>```<br/></details><br/><br/><br/><!-- gh-aw-agentic-workflow: Repo Assist, engine: copilot, version: 1.0.52, model: claude-sonnet-4.6, id: 26451493301, workflow_id: repo-assist, run: https://github.com/github/gh-aw-mcpg/actions/runs/26451493301 -->" ]]></description></item><item>	<title>[Feature]: Generate vector glyphs/icons instead of rasterized ones</title>	<link>https://github.com/github/gh-skyline/issues/81</link>	<description><![CDATA[### Description<br/><br/>Zooming in closely on the generated STL, the text and the icon look a bit grainy due, likely due to being rasterized. Compare one of the old skyline.github.com models:<br/><br/>! <a href="https://github.com/user-attachments/assets/d462e190-3cb3-4151-b427-949ac056d4d0">Image</a> 
 
 <br/><br/>to a model as generated by this tool:<br/><br/>! <a href="https://github.com/user-attachments/assets/585d615d-7e25-45dd-8b25-6059aed67791">Image</a> 
 
