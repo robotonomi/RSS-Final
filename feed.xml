@@ -14,17 +14,23 @@ _, we see the dreaded `Resource not accessible by integration` error. Example fr
 . If there are errors there, please fix them in  <a href="https://github.com/spdx/license-list-XML">spdx/license-list-XML</a> 
 
  (from which the plain text version is generated)
- so as to minimize license text variation and make it easier for choosealicense.com to eventually consume license texts directly from SPDX.<br/><br/>The test could clone spdx/license-list-data and compare each license we have cataloged in this project. Many existing licenses would probably have to be marked as expected failures due to bugs in SPDX output and discrepancies in how this project has cataloged some licenses. But we should address upfront for any new license cataloged here, and continue to chip away at the existing inconsistencies." ]]></description></item><item>	<title>[Repo Assist] Monthly Activity 2026-05</title>	<link>https://github.com/github/gh-aw-mcpg/issues/4929</link>	<description><![CDATA[🤖 *Repo Assist here — I'm an automated AI assistant for this repository.*<br/><br/>## Activity for May 2026<br/><br/>## Suggested Actions for Maintainer<br/><br/>* [ ] **Review PR**: `refactor: extract RecordSpanError helper` — eliminates 5 duplicate span error patterns, fixes missing stack trace in rate-limit path —  <a href="https://github.com/github/gh-aw-mcpg/pulls">Review</a> 
+ so as to minimize license text variation and make it easier for choosealicense.com to eventually consume license texts directly from SPDX.<br/><br/>The test could clone spdx/license-list-data and compare each license we have cataloged in this project. Many existing licenses would probably have to be marked as expected failures due to bugs in SPDX output and discrepancies in how this project has cataloged some licenses. But we should address upfront for any new license cataloged here, and continue to chip away at the existing inconsistencies." ]]></description></item><item>	<title>[Repo Assist] Monthly Activity 2026-05</title>	<link>https://github.com/github/gh-aw-mcpg/issues/4929</link>	<description><![CDATA[🤖 *Repo Assist here — I'm an automated AI assistant for this repository.*<br/><br/>## Activity for May 2026<br/><br/>## Suggested Actions for Maintainer<br/><br/>* [ ] **Review PR**: `refactor: move TruncateSessionID from auth to strutil` — moves string utility to correct package, removes 3 unnecessary auth imports —  <a href="https://github.com/github/gh-aw-mcpg/pulls">Review</a> 
+
+<br/>* [ ] **Review PR**: `refactor: extract RecordSpanError helper` — eliminates 5 duplicate span error patterns, fixes missing stack trace in rate-limit path —  <a href="https://github.com/github/gh-aw-mcpg/pulls">Review</a> 
 
 <br/>* [ ] **Check comment** #6520: Repo Assist investigated `max-calls`/`tool-call-limits` status — feature not in codebase, ready to implement if confirmed —  <a href="https://github.com/github/gh-aw-mcpg/issues/6520">View</a> 
 
 <br/>* [ ] **Check comment** #6382: Repo Assist confirmed guard coverage gaps and provided exact fix snippets —  <a href="https://github.com/github/gh-aw-mcpg/issues/6382">View</a> 
 
+<br/>* [ ] **Check comment** #6512: `sub_issue_write` already in READ_WRITE_OPERATIONS — issue can be closed —  <a href="https://github.com/github/gh-aw-mcpg/issues/6512">View</a> 
+
 <br/><br/>## Future Work for Repo Assist<br/><br/>- Implement `max-calls` feature (#6520)
  if maintainer confirms<br/>- per-tool jq filters (#5270)
 , session timeout (#5071)
 <br/>- Address rust-guard #6575 (merge 12 identical repo-scoped write arms)
-<br/><br/>## Guard Filtering Summary<br/><br/>No objects were filtered by the guard policy.<br/><br/>## Run History<br/><br/>### 2026-05-28 13:58 UTC —  <a href="https://github.com/github/gh-aw-mcpg/actions/runs/26579220089">Run</a> 
+<br/>- #6499 Priority 2: co-locate rate-limit reset parsing in httputil<br/><br/>## Guard Filtering Summary<br/><br/>No objects were filtered by the guard policy.<br/><br/>## Run History<br/><br/>### 2026-05-29 13:45 UTC —  <a href="https://github.com/github/gh-aw-mcpg/actions/runs/26640744899">Run</a> 
+
+<br/>- 🔧 Created PR: `refactor: move TruncateSessionID from auth to strutil` — addresses #6499 Priority 1<br/>- 💬 Commented on #6512: `sub_issue_write` already present in READ_WRITE_OPERATIONS — issue can be closed<br/><br/>### 2026-05-28 13:58 UTC —  <a href="https://github.com/github/gh-aw-mcpg/actions/runs/26579220089">Run</a> 
 
 <br/>- 🔧 Created PR: `refactor: extract RecordSpanError helper` — addresses #6616, fixes missing stack trace in rate-limit path<br/><br/>### 2026-05-27 13:50 UTC —  <a href="https://github.com/github/gh-aw-mcpg/actions/runs/26515298254">Run</a> 
 
@@ -35,7 +41,7 @@ _, we see the dreaded `Resource not accessible by integration` error. Example fr
 <br/>- 🏷️ Labelled #6520 with `enhancement`<br/>- 💬 Commented on #6520: investigated `max-calls` / `tool-call-limits` status — feature absent from codebase, outlined implementation steps<br/><br/>### 2026-05-25 13:45 UTC —  <a href="https://github.com/github/gh-aw-mcpg/actions/runs/26403628726">Run</a> 
 
 <br/>- 🔧 Created branch `repo-assist/fix-rust-guard-6458`: `refactor(rust-guard)
-: use policy_integrity constants and add security-tool label tests` — closes #6458 (3 new security tests, all 435 Rust tests pass)
+: use policy_integrity constants and add security-tool label tests` — closes #6458 (3 new tests, all 435 Rust tests pass)
 <br/><br/>### 2026-05-24 13:00 UTC —  <a href="https://github.com/github/gh-aw-mcpg/actions/runs/26361900843">Run</a> 
 
 <br/>- 🔧 Created branch `repo-assist/improve-extract-wasm-call-result`: `refactor(guard)
@@ -68,21 +74,27 @@ _, we see the dreaded `Resource not accessible by integration` error. Example fr
 <br/>- 🏷️ Labelled #5741, #5735, #5718 with `automated smoke tests`<br/>- 🔧 Created PR #5750: `refactor(config)
 : add envutil.HasEnvVar and hasMapKeyVariants helpers` — closes #5733 — **merged**<br/><br/>> [!WARNING]<br/>> <details><br/>> <summary>Firewall blocked 1 domain</summary><br/>><br/>> The following domain was blocked by the firewall during workflow execution:<br/>><br/>> - `proxy.golang.org`<br/>>> To allow these domains, add them to the `network.allowed` list in your workflow frontmatter:<br/>><br/>> ```yaml<br/>> network:<br/>>   allowed:<br/>>     - defaults<br/>>     - \"proxy.golang.org\"<br/>> ```<br/>><br/>> See  <a href="https://github.github.com/gh-aw/reference/network/">Network Configuration</a> 
 
- for more information.<br/>><br/>> </details><br/><br/><br/>> Generated by  <a href="https://github.com/github/gh-aw-mcpg/actions/runs/26579220089">Repo Assist</a> 
+ for more information.<br/>><br/>> </details><br/><br/><br/>> Generated by  <a href="https://github.com/github/gh-aw-mcpg/actions/runs/26640744899">Repo Assist</a> 
 
- · sonnet46 3.8M ·  <a href="https://github.com/search?q=repo%3Agithub%2Fgh-aw-mcpg+is%3Aissue+%22gh-aw-workflow-call-id%3A+github%2Fgh-aw-mcpg%2Frepo-assist%22&amp;type=issues">◷</a> 
+ · sonnet46 6.6M ·  <a href="https://github.com/search?q=repo%3Agithub%2Fgh-aw-mcpg+is%3Aissue+%22gh-aw-workflow-call-id%3A+github%2Fgh-aw-mcpg%2Frepo-assist%22&amp;type=issues">◷</a> 
 
-<br/>><br/><details><br/><summary>Add this agentic workflows to your repo</summary><br/><br/>To install this agentic workflow, run<br/><br/>```<br/>gh aw add githubnext/agentics/workflows/repo-assist.md@851905c06e905bf362a9f6cc54f912e3df747d55<br/>```<br/></details><br/><br/><br/><!-- gh-aw-agentic-workflow: Repo Assist, engine: copilot, version: 1.0.52, model: claude-sonnet-4.6, id: 26579220089, workflow_id: repo-assist, run: https://github.com/github/gh-aw-mcpg/actions/runs/26579220089 -->" ]]></description></item><item>	<title>[Repo Assist] Monthly Activity 2026-05</title>	<link>https://github.com/github/gh-aw-mcpg/issues/4929</link>	<description><![CDATA[🤖 *Repo Assist here — I'm an automated AI assistant for this repository.*<br/><br/>## Activity for May 2026<br/><br/>## Suggested Actions for Maintainer<br/><br/>* [ ] **Review PR**: `refactor: extract RecordSpanError helper` — eliminates 5 duplicate span error patterns, fixes missing stack trace in rate-limit path —  <a href="https://github.com/github/gh-aw-mcpg/pulls">Review</a> 
+<br/>><br/><details><br/><summary>Add this agentic workflows to your repo</summary><br/><br/>To install this agentic workflow, run<br/><br/>```<br/>gh aw add githubnext/agentics/workflows/repo-assist.md@851905c06e905bf362a9f6cc54f912e3df747d55<br/>```<br/></details><br/><br/><br/><!-- gh-aw-agentic-workflow: Repo Assist, engine: copilot, version: 1.0.52, model: claude-sonnet-4.6, id: 26640744899, workflow_id: repo-assist, run: https://github.com/github/gh-aw-mcpg/actions/runs/26640744899 -->" ]]></description></item><item>	<title>[Repo Assist] Monthly Activity 2026-05</title>	<link>https://github.com/github/gh-aw-mcpg/issues/4929</link>	<description><![CDATA[🤖 *Repo Assist here — I'm an automated AI assistant for this repository.*<br/><br/>## Activity for May 2026<br/><br/>## Suggested Actions for Maintainer<br/><br/>* [ ] **Review PR**: `refactor: move TruncateSessionID from auth to strutil` — moves string utility to correct package, removes 3 unnecessary auth imports —  <a href="https://github.com/github/gh-aw-mcpg/pulls">Review</a> 
+
+<br/>* [ ] **Review PR**: `refactor: extract RecordSpanError helper` — eliminates 5 duplicate span error patterns, fixes missing stack trace in rate-limit path —  <a href="https://github.com/github/gh-aw-mcpg/pulls">Review</a> 
 
 <br/>* [ ] **Check comment** #6520: Repo Assist investigated `max-calls`/`tool-call-limits` status — feature not in codebase, ready to implement if confirmed —  <a href="https://github.com/github/gh-aw-mcpg/issues/6520">View</a> 
 
 <br/>* [ ] **Check comment** #6382: Repo Assist confirmed guard coverage gaps and provided exact fix snippets —  <a href="https://github.com/github/gh-aw-mcpg/issues/6382">View</a> 
 
+<br/>* [ ] **Check comment** #6512: `sub_issue_write` already in READ_WRITE_OPERATIONS — issue can be closed —  <a href="https://github.com/github/gh-aw-mcpg/issues/6512">View</a> 
+
 <br/><br/>## Future Work for Repo Assist<br/><br/>- Implement `max-calls` feature (#6520)
  if maintainer confirms<br/>- per-tool jq filters (#5270)
 , session timeout (#5071)
 <br/>- Address rust-guard #6575 (merge 12 identical repo-scoped write arms)
-<br/><br/>## Guard Filtering Summary<br/><br/>No objects were filtered by the guard policy.<br/><br/>## Run History<br/><br/>### 2026-05-28 13:58 UTC —  <a href="https://github.com/github/gh-aw-mcpg/actions/runs/26579220089">Run</a> 
+<br/>- #6499 Priority 2: co-locate rate-limit reset parsing in httputil<br/><br/>## Guard Filtering Summary<br/><br/>No objects were filtered by the guard policy.<br/><br/>## Run History<br/><br/>### 2026-05-29 13:45 UTC —  <a href="https://github.com/github/gh-aw-mcpg/actions/runs/26640744899">Run</a> 
+
+<br/>- 🔧 Created PR: `refactor: move TruncateSessionID from auth to strutil` — addresses #6499 Priority 1<br/>- 💬 Commented on #6512: `sub_issue_write` already present in READ_WRITE_OPERATIONS — issue can be closed<br/><br/>### 2026-05-28 13:58 UTC —  <a href="https://github.com/github/gh-aw-mcpg/actions/runs/26579220089">Run</a> 
 
 <br/>- 🔧 Created PR: `refactor: extract RecordSpanError helper` — addresses #6616, fixes missing stack trace in rate-limit path<br/><br/>### 2026-05-27 13:50 UTC —  <a href="https://github.com/github/gh-aw-mcpg/actions/runs/26515298254">Run</a> 
 
@@ -93,7 +105,7 @@ _, we see the dreaded `Resource not accessible by integration` error. Example fr
 <br/>- 🏷️ Labelled #6520 with `enhancement`<br/>- 💬 Commented on #6520: investigated `max-calls` / `tool-call-limits` status — feature absent from codebase, outlined implementation steps<br/><br/>### 2026-05-25 13:45 UTC —  <a href="https://github.com/github/gh-aw-mcpg/actions/runs/26403628726">Run</a> 
 
 <br/>- 🔧 Created branch `repo-assist/fix-rust-guard-6458`: `refactor(rust-guard)
-: use policy_integrity constants and add security-tool label tests` — closes #6458 (3 new security tests, all 435 Rust tests pass)
+: use policy_integrity constants and add security-tool label tests` — closes #6458 (3 new tests, all 435 Rust tests pass)
 <br/><br/>### 2026-05-24 13:00 UTC —  <a href="https://github.com/github/gh-aw-mcpg/actions/runs/26361900843">Run</a> 
 
 <br/>- 🔧 Created branch `repo-assist/improve-extract-wasm-call-result`: `refactor(guard)
@@ -126,21 +138,27 @@ _, we see the dreaded `Resource not accessible by integration` error. Example fr
 <br/>- 🏷️ Labelled #5741, #5735, #5718 with `automated smoke tests`<br/>- 🔧 Created PR #5750: `refactor(config)
 : add envutil.HasEnvVar and hasMapKeyVariants helpers` — closes #5733 — **merged**<br/><br/>> [!WARNING]<br/>> <details><br/>> <summary>Firewall blocked 1 domain</summary><br/>><br/>> The following domain was blocked by the firewall during workflow execution:<br/>><br/>> - `proxy.golang.org`<br/>>> To allow these domains, add them to the `network.allowed` list in your workflow frontmatter:<br/>><br/>> ```yaml<br/>> network:<br/>>   allowed:<br/>>     - defaults<br/>>     - \"proxy.golang.org\"<br/>> ```<br/>><br/>> See  <a href="https://github.github.com/gh-aw/reference/network/">Network Configuration</a> 
 
- for more information.<br/>><br/>> </details><br/><br/><br/>> Generated by  <a href="https://github.com/github/gh-aw-mcpg/actions/runs/26579220089">Repo Assist</a> 
+ for more information.<br/>><br/>> </details><br/><br/><br/>> Generated by  <a href="https://github.com/github/gh-aw-mcpg/actions/runs/26640744899">Repo Assist</a> 
 
- · sonnet46 3.8M ·  <a href="https://github.com/search?q=repo%3Agithub%2Fgh-aw-mcpg+is%3Aissue+%22gh-aw-workflow-call-id%3A+github%2Fgh-aw-mcpg%2Frepo-assist%22&amp;type=issues">◷</a> 
+ · sonnet46 6.6M ·  <a href="https://github.com/search?q=repo%3Agithub%2Fgh-aw-mcpg+is%3Aissue+%22gh-aw-workflow-call-id%3A+github%2Fgh-aw-mcpg%2Frepo-assist%22&amp;type=issues">◷</a> 
 
-<br/>><br/><details><br/><summary>Add this agentic workflows to your repo</summary><br/><br/>To install this agentic workflow, run<br/><br/>```<br/>gh aw add githubnext/agentics/workflows/repo-assist.md@851905c06e905bf362a9f6cc54f912e3df747d55<br/>```<br/></details><br/><br/><br/><!-- gh-aw-agentic-workflow: Repo Assist, engine: copilot, version: 1.0.52, model: claude-sonnet-4.6, id: 26579220089, workflow_id: repo-assist, run: https://github.com/github/gh-aw-mcpg/actions/runs/26579220089 -->" ]]></description></item><item>	<title>[Repo Assist] Monthly Activity 2026-05</title>	<link>https://github.com/github/gh-aw-mcpg/issues/4929</link>	<description><![CDATA[🤖 *Repo Assist here — I'm an automated AI assistant for this repository.*<br/><br/>## Activity for May 2026<br/><br/>## Suggested Actions for Maintainer<br/><br/>* [ ] **Review PR**: `refactor: extract RecordSpanError helper` — eliminates 5 duplicate span error patterns, fixes missing stack trace in rate-limit path —  <a href="https://github.com/github/gh-aw-mcpg/pulls">Review</a> 
+<br/>><br/><details><br/><summary>Add this agentic workflows to your repo</summary><br/><br/>To install this agentic workflow, run<br/><br/>```<br/>gh aw add githubnext/agentics/workflows/repo-assist.md@851905c06e905bf362a9f6cc54f912e3df747d55<br/>```<br/></details><br/><br/><br/><!-- gh-aw-agentic-workflow: Repo Assist, engine: copilot, version: 1.0.52, model: claude-sonnet-4.6, id: 26640744899, workflow_id: repo-assist, run: https://github.com/github/gh-aw-mcpg/actions/runs/26640744899 -->" ]]></description></item><item>	<title>[Repo Assist] Monthly Activity 2026-05</title>	<link>https://github.com/github/gh-aw-mcpg/issues/4929</link>	<description><![CDATA[🤖 *Repo Assist here — I'm an automated AI assistant for this repository.*<br/><br/>## Activity for May 2026<br/><br/>## Suggested Actions for Maintainer<br/><br/>* [ ] **Review PR**: `refactor: move TruncateSessionID from auth to strutil` — moves string utility to correct package, removes 3 unnecessary auth imports —  <a href="https://github.com/github/gh-aw-mcpg/pulls">Review</a> 
+
+<br/>* [ ] **Review PR**: `refactor: extract RecordSpanError helper` — eliminates 5 duplicate span error patterns, fixes missing stack trace in rate-limit path —  <a href="https://github.com/github/gh-aw-mcpg/pulls">Review</a> 
 
 <br/>* [ ] **Check comment** #6520: Repo Assist investigated `max-calls`/`tool-call-limits` status — feature not in codebase, ready to implement if confirmed —  <a href="https://github.com/github/gh-aw-mcpg/issues/6520">View</a> 
 
 <br/>* [ ] **Check comment** #6382: Repo Assist confirmed guard coverage gaps and provided exact fix snippets —  <a href="https://github.com/github/gh-aw-mcpg/issues/6382">View</a> 
 
+<br/>* [ ] **Check comment** #6512: `sub_issue_write` already in READ_WRITE_OPERATIONS — issue can be closed —  <a href="https://github.com/github/gh-aw-mcpg/issues/6512">View</a> 
+
 <br/><br/>## Future Work for Repo Assist<br/><br/>- Implement `max-calls` feature (#6520)
  if maintainer confirms<br/>- per-tool jq filters (#5270)
 , session timeout (#5071)
 <br/>- Address rust-guard #6575 (merge 12 identical repo-scoped write arms)
-<br/><br/>## Guard Filtering Summary<br/><br/>No objects were filtered by the guard policy.<br/><br/>## Run History<br/><br/>### 2026-05-28 13:58 UTC —  <a href="https://github.com/github/gh-aw-mcpg/actions/runs/26579220089">Run</a> 
+<br/>- #6499 Priority 2: co-locate rate-limit reset parsing in httputil<br/><br/>## Guard Filtering Summary<br/><br/>No objects were filtered by the guard policy.<br/><br/>## Run History<br/><br/>### 2026-05-29 13:45 UTC —  <a href="https://github.com/github/gh-aw-mcpg/actions/runs/26640744899">Run</a> 
+
+<br/>- 🔧 Created PR: `refactor: move TruncateSessionID from auth to strutil` — addresses #6499 Priority 1<br/>- 💬 Commented on #6512: `sub_issue_write` already present in READ_WRITE_OPERATIONS — issue can be closed<br/><br/>### 2026-05-28 13:58 UTC —  <a href="https://github.com/github/gh-aw-mcpg/actions/runs/26579220089">Run</a> 
 
 <br/>- 🔧 Created PR: `refactor: extract RecordSpanError helper` — addresses #6616, fixes missing stack trace in rate-limit path<br/><br/>### 2026-05-27 13:50 UTC —  <a href="https://github.com/github/gh-aw-mcpg/actions/runs/26515298254">Run</a> 
 
@@ -151,7 +169,7 @@ _, we see the dreaded `Resource not accessible by integration` error. Example fr
 <br/>- 🏷️ Labelled #6520 with `enhancement`<br/>- 💬 Commented on #6520: investigated `max-calls` / `tool-call-limits` status — feature absent from codebase, outlined implementation steps<br/><br/>### 2026-05-25 13:45 UTC —  <a href="https://github.com/github/gh-aw-mcpg/actions/runs/26403628726">Run</a> 
 
 <br/>- 🔧 Created branch `repo-assist/fix-rust-guard-6458`: `refactor(rust-guard)
-: use policy_integrity constants and add security-tool label tests` — closes #6458 (3 new security tests, all 435 Rust tests pass)
+: use policy_integrity constants and add security-tool label tests` — closes #6458 (3 new tests, all 435 Rust tests pass)
 <br/><br/>### 2026-05-24 13:00 UTC —  <a href="https://github.com/github/gh-aw-mcpg/actions/runs/26361900843">Run</a> 
 
 <br/>- 🔧 Created branch `repo-assist/improve-extract-wasm-call-result`: `refactor(guard)
@@ -184,11 +202,11 @@ _, we see the dreaded `Resource not accessible by integration` error. Example fr
 <br/>- 🏷️ Labelled #5741, #5735, #5718 with `automated smoke tests`<br/>- 🔧 Created PR #5750: `refactor(config)
 : add envutil.HasEnvVar and hasMapKeyVariants helpers` — closes #5733 — **merged**<br/><br/>> [!WARNING]<br/>> <details><br/>> <summary>Firewall blocked 1 domain</summary><br/>><br/>> The following domain was blocked by the firewall during workflow execution:<br/>><br/>> - `proxy.golang.org`<br/>>> To allow these domains, add them to the `network.allowed` list in your workflow frontmatter:<br/>><br/>> ```yaml<br/>> network:<br/>>   allowed:<br/>>     - defaults<br/>>     - \"proxy.golang.org\"<br/>> ```<br/>><br/>> See  <a href="https://github.github.com/gh-aw/reference/network/">Network Configuration</a> 
 
- for more information.<br/>><br/>> </details><br/><br/><br/>> Generated by  <a href="https://github.com/github/gh-aw-mcpg/actions/runs/26579220089">Repo Assist</a> 
+ for more information.<br/>><br/>> </details><br/><br/><br/>> Generated by  <a href="https://github.com/github/gh-aw-mcpg/actions/runs/26640744899">Repo Assist</a> 
 
- · sonnet46 3.8M ·  <a href="https://github.com/search?q=repo%3Agithub%2Fgh-aw-mcpg+is%3Aissue+%22gh-aw-workflow-call-id%3A+github%2Fgh-aw-mcpg%2Frepo-assist%22&amp;type=issues">◷</a> 
+ · sonnet46 6.6M ·  <a href="https://github.com/search?q=repo%3Agithub%2Fgh-aw-mcpg+is%3Aissue+%22gh-aw-workflow-call-id%3A+github%2Fgh-aw-mcpg%2Frepo-assist%22&amp;type=issues">◷</a> 
 
-<br/>><br/><details><br/><summary>Add this agentic workflows to your repo</summary><br/><br/>To install this agentic workflow, run<br/><br/>```<br/>gh aw add githubnext/agentics/workflows/repo-assist.md@851905c06e905bf362a9f6cc54f912e3df747d55<br/>```<br/></details><br/><br/><br/><!-- gh-aw-agentic-workflow: Repo Assist, engine: copilot, version: 1.0.52, model: claude-sonnet-4.6, id: 26579220089, workflow_id: repo-assist, run: https://github.com/github/gh-aw-mcpg/actions/runs/26579220089 -->" ]]></description></item><item>	<title>[Feature]: Generate vector glyphs/icons instead of rasterized ones</title>	<link>https://github.com/github/gh-skyline/issues/81</link>	<description><![CDATA[### Description<br/><br/>Zooming in closely on the generated STL, the text and the icon look a bit grainy due, likely due to being rasterized. Compare one of the old skyline.github.com models:<br/><br/>! <a href="https://github.com/user-attachments/assets/d462e190-3cb3-4151-b427-949ac056d4d0">Image</a> 
+<br/>><br/><details><br/><summary>Add this agentic workflows to your repo</summary><br/><br/>To install this agentic workflow, run<br/><br/>```<br/>gh aw add githubnext/agentics/workflows/repo-assist.md@851905c06e905bf362a9f6cc54f912e3df747d55<br/>```<br/></details><br/><br/><br/><!-- gh-aw-agentic-workflow: Repo Assist, engine: copilot, version: 1.0.52, model: claude-sonnet-4.6, id: 26640744899, workflow_id: repo-assist, run: https://github.com/github/gh-aw-mcpg/actions/runs/26640744899 -->" ]]></description></item><item>	<title>[Feature]: Generate vector glyphs/icons instead of rasterized ones</title>	<link>https://github.com/github/gh-skyline/issues/81</link>	<description><![CDATA[### Description<br/><br/>Zooming in closely on the generated STL, the text and the icon look a bit grainy due, likely due to being rasterized. Compare one of the old skyline.github.com models:<br/><br/>! <a href="https://github.com/user-attachments/assets/d462e190-3cb3-4151-b427-949ac056d4d0">Image</a> 
 
 <br/><br/>to a model as generated by this tool:<br/><br/>! <a href="https://github.com/user-attachments/assets/585d615d-7e25-45dd-8b25-6059aed67791">Image</a> 
 
